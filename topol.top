@@ -42,15 +42,15 @@ Other               3
     13       HCA1      1   AGAI     H3     13       0.09      1.008   ; qtot 0.23
     14      OC311      1   AGAI     O3     14      -0.65    15.9994   ; qtot -0.42
     15       HCP1      1   AGAI    HO3     15       0.42      1.008   ; qtot 0
-    16     CC3161      1   AGAI     C4     16       0.09     12.011   ; qtot 0.09
-    17       HCA1      1   AGAI     H4     17       0.09      1.008   ; qtot 0.18
-    18      OC301      1   AGAI     O4     18      -0.36    15.9994   ; qtot -0.18
+    16     CC3161      1   AGAI     C4     16       0.09     12.011   ; qtot 0.09  ;; GL
+    17       HCA1      1   AGAI     H4     17       0.09      1.008   ; qtot 0.18  
+    18      OC301      1   AGAI     O4     18      -0.36    15.9994   ; qtot -0.18 ;; GL
     19      CC2O2      1   AGAI     C6     19       0.52     12.011   ; qtot 0.34
     20      OC2D2      1   AGAI    O61     20      -0.76    15.9994   ; qtot -0.42
     21      OC2D2      1   AGAI    O62     21      -0.76    15.9994   ; qtot -1.18
     22       HCP1      1   AGAI    HO5     22       0.42      1.008   ; qtot -0.76
 ; residue   2 AGAM rtp AGAM q -0.6
-    23     CC3162      2   AGAM     C1     23       0.29     12.011   ; qtot -0.47
+    23     CC3162      2   AGAM     C1     23       0.29     12.011   ; qtot -0.47 ;; GL
     24       HCA1      2   AGAM     H1     24       0.09      1.008   ; qtot -0.38
     25     CC3163      2   AGAM     C5     25       0.11     12.011   ; qtot -0.27
     26       HCA1      2   AGAM     H5     26       0.09      1.008   ; qtot -0.18
