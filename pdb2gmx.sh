@@ -24,7 +24,7 @@ sed -i 's/H   4OA A/HO5 AGAM/g' ${cl}HGB_H.pdb
 sed -i 's/H   0OA A/HO5 AGAT/g' ${cl}HGB_H.pdb
 
 
-# TAKE AWAY 1 FROM COLUMN 5, THIS IS FOR ATOMS EXCLUING HO5 (ENSURES RESIDUES ARE NUMBERED CORRECTLY)
+# TAKE AWAY 1 FROM COLUMN 5, THIS IS FOR ATOMS EXCLUDING HO5 (ENSURES RESIDUES ARE NUMBERED CORRECTLY)
 awk '{
 split($0, a, FS, seps);  
 if (a[2] >2 && a[2] <'${LR}-1') {
@@ -81,7 +81,7 @@ export length=${#F[@]}
 #COMMAND TO MOVE THE HO5 LINES 
 
 for ((i=0; i<=($length); i++)); do
-        echo ${F[i]}m${T[i]}
+        #echo ${F[i]}m${T[i]}
        	mve=${F[i]}m${T[i]}
 	printf  %s\\n "$mve" w q | ed -s test1.pdb
 done
