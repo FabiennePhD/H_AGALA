@@ -1,0 +1,10 @@
+Converting doglycans .pdb
+
+1.set chain length (cl) in seqfile.seq (the number straight after the curly bracket defines this)
+2.set cl in doglycans.sh, then bash doglycans.sh
+3.set cl in pdb2gmx.sh, then bash doglycans.sh
+  Providing the merged.rtp file is in local directory along with the other files for the force field you should end up with topology. 
+
+I have tested for various lenghts, I get a topology, although with longer chain lengths e.g. cl=100 I get warning messages about 'long bonds' ->might need to tweak formatting in pdb
+
+
