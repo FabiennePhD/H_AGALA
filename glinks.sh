@@ -174,3 +174,7 @@ $0 ~ /funct/ {
 # $0: until you get to 'bonds' which is then flagged to do something
 # $0: 'funct' not sure about this part...
 # if: when at 'bonds' print the array variables i.e. i= 18 23, i+=38 43, i++58 63... print as string, for each i value we have a new line
+
+# clean up the temporary files you created...
+rm -r -f O4 C1 C4 H1 O5 C2 H4 C5 H2 O2 C3 topol2.top topol3.top
+
