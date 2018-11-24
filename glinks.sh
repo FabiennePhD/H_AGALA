@@ -6,29 +6,39 @@
 
 # Caution! The below might well make the experienced scripters eyes bleed -but on the flip side it works- hopefully with time I can make it less cumbersome, for example the only way I could store my variables was to write them to a file and then awk them, but there must be a quicker way. Also, I go through 3 topology file writing stages before arriving at the final one, hopefully with time I will pick up things on the way to make it tmore streamlined...
 
+# Needs:
+# source activate doglycans || assuming one has a working conda environement...
+
+# Do not use absolute paths, especially if repeating the same path multiple times.
+# Use variables instead
+
+f_path="./"
+t_file="topol.top"
 
 
-grep -n "OC301" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | awk '{print $2}' > O4
+# The way in which you store the result of whatever command into a SINGLE variable is:
+# variable=`command` # note the ` symbol (infamously difficult to get consistently right across different keyboards)
 
-grep -n "CC3162" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | awk '{print $2}' > C1
+# Now, things are a tad bit more complex here, because you have to store not a single number/string/wathever, but
+# an array of numbers. Say, grep -n "CC3162" $f_path/$t_file | awk '{print $2}' gives you not one, but 10 numbers.
+# The way to go about that is to use something like: C1=($(command)). In this case, for example:
+# 	C1=($(grep -n "CC3162" $f_path/$t_file | awk '{print $2}'))
+# Note that now C1 is an array, so that in order to access, say, its 4th element, you'll have to go: 
+# 	echo ${C1[3]}
+# And yes, an array with 10 elements has indexes from 0 to 9 - VMD/Python like. 
+# This is NOT ALWAYS the case in bash... check!
 
-grep -n "CC3161" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "C4" | awk '{print $2}' > C4
-
-grep -n "HCA1" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "H1"| awk '{print $2}' > H1
-
-grep -n "OC3C61" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "O5"| awk '{print $2}' > O5
-
-grep -n "CC3161" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "C2"| awk '{print $2}' > C2
-
-grep -n "HCA1" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "H4"| awk '{print $2}' > H4
-
-grep -n "CC3163" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "C5"| awk '{print $2}' > C5
-
-grep -n "HCA1" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "H2"| awk '{print $2}' > H2
-
-grep -n "OC311" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep "O2"| awk '{print $2}' > O2
-
-grep -n "CC3161" //storage/chem/mstscj/H_AGALA/doglycans/topol.top | grep -w "C3"| awk '{print $2}' > C3
+grep -n "OC301"  $f_path/$t_file | awk '{print $2}' > O4
+grep -n "CC3162" $f_path/$t_file | awk '{print $2}' > C1
+grep -n "CC3161" $f_path/$t_file | grep "C4" | awk '{print $2}' > C4
+grep -n "HCA1"   $f_path/$t_file | grep "H1"| awk '{print $2}' > H1
+grep -n "OC3C61" $f_path/$t_file | grep "O5"| awk '{print $2}' > O5
+grep -n "CC3161" $f_path/$t_file | grep "C2"| awk '{print $2}' > C2
+grep -n "HCA1"   $f_path/$t_file | grep "H4"| awk '{print $2}' > H4
+grep -n "CC3163" $f_path/$t_file | grep "C5"| awk '{print $2}' > C5
+grep -n "HCA1"   $f_path/$t_file | grep "H2"| awk '{print $2}' > H2
+grep -n "OC311"  $f_path/$t_file | grep "O2"| awk '{print $2}' > O2
+grep -n "CC3161" $f_path/$t_file | grep -w "C3"| awk '{print $2}' > C3
 
 O4=($(awk '{print $1}' < O4))
 lO4=${#O4[@]}
