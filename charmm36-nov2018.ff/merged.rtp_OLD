@@ -8455,8 +8455,8 @@
          H4    HCA1   0.090  17  
          O4   OC301  -0.360  18  
          C6   CC2O2   0.520  19  
-        O61   OC2D2  -0.568  20  ; -> stays OC2D2 ; but charge goes from -0.760 to -0.568
-        O62   OC311  -0.630  21  ; -> OC311 ; also, -0.760 -> -0.630
+        O61   OC2D2  -0.760  20  ; -> stays OC2D2 ; but charge goes from -0.760 to -0.568
+        O62   OC2D2  -0.760  21  ; -> OC311 ; also, -0.760 -> -0.630
         HO5    HCP1   0.420  22
 [ bonds ]
         C1    O1
@@ -8481,7 +8481,7 @@
         C6   O61
         C6   O62
         C5    O5 
-       O62   HO5 ; -> O62   HO5
+       O61   HO5 ; -> O62   HO5
 
 
 [ AGAM ] ****
@@ -8503,8 +8503,8 @@
          H4     HCA1   0.090  15  
          O4    OC301  -0.360  16  
          C6    CC2O2   0.520  17  
-        O61    OC2D2  -0.568  18  
-        O62    OC311  -0.630  19 
+        O61    OC2D2  -0.760  18  
+        O62    OC2D2  -0.760  19 
         HO5     HCP1   0.420  20
 [ bonds ]
      ;   C1    O1
@@ -8529,7 +8529,7 @@
         C6   O61
         C6   O62
         C5    O5 
-        O62   HO5
+        O61   HO5
 
 [ AGAT]  ****                            
  [ atoms ]
@@ -8551,8 +8551,8 @@
         O4    OC311   -0.650  16  
        HO4     HCP1    0.420  17  
         C6    CC2O2    0.520  18  
-       O61    OC2D2   -0.568  19  
-       O62    OC311   -0.630  20
+       O61    OC2D2   -0.760  19  
+       O62    OC2D2   -0.760  20
        HO5     HCP1    0.420  21  
  [ bonds ]
    ;     C1    O1
@@ -8577,7 +8577,7 @@
         C6   O61
         C6   O62
         C5    O5 
-       O62   HO5
+       ;O61   HO5
 
 ;[ AGAI ] ; 1st sugar within an AGAL chain
 ;  [ atoms ]

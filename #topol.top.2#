@@ -2,7 +2,7 @@
 ;	File 'topol.top' was generated
 ;	By user: mssnkt (14191)
 ;	On host: llcapo.csc.warwick.ac.uk
-;	At date: Mon Nov 26 11:22:44 2018
+;	At date: Tue Nov 20 13:50:24 2018
 
 ;
 ;	This is a standalone topology file
@@ -26,7 +26,7 @@ Other               3
 
 [ atoms ]
 ;   nr       type  resnr residue  atom   cgnr     charge       mass  typeB    chargeB      massB
-; residue   1 AGAI rtp AGAI q -0.4
+; residue   1 AGAI rtp AGAI q -0.8
      1     CC3162      1   AGAI     C1      1       0.34     12.011   ; qtot 0.34
      2       HCA1      1   AGAI     H1      2       0.09      1.008   ; qtot 0.43
      3      OC311      1   AGAI     O1      3      -0.65    15.9994   ; qtot -0.22
@@ -46,52 +46,52 @@ Other               3
     17       HCA1      1   AGAI     H4     17       0.09      1.008   ; qtot 0.18
     18      OC301      1   AGAI     O4     18      -0.36    15.9994   ; qtot -0.18
     19      CC2O2      1   AGAI     C6     19       0.52     12.011   ; qtot 0.34
-    20      OC2D2      1   AGAI    O61     20     -0.568    15.9994   ; qtot -0.228
-    21      OC311      1   AGAI    O62     21      -0.63    15.9994   ; qtot -0.858
-    22       HCP1      1   AGAI    HO5     22       0.42      1.008   ; qtot -0.438
-; residue   2 AGAM rtp AGAM q -0.3
-    23     CC3162      2   AGAM     C1     23       0.29     12.011   ; qtot -0.148
-    24       HCA1      2   AGAM     H1     24       0.09      1.008   ; qtot -0.058
-    25     CC3163      2   AGAM     C5     25       0.11     12.011   ; qtot 0.052
-    26       HCA1      2   AGAM     H5     26       0.09      1.008   ; qtot 0.142
-    27     OC3C61      2   AGAM     O5     27       -0.4    15.9994   ; qtot -0.258
-    28     CC3161      2   AGAM     C2     28       0.14     12.011   ; qtot -0.118
-    29       HCA1      2   AGAM     H2     29       0.09      1.008   ; qtot -0.028
-    30      OC311      2   AGAM     O2     30      -0.65    15.9994   ; qtot -0.678
-    31       HCP1      2   AGAM    HO2     31       0.42      1.008   ; qtot -0.258
-    32     CC3161      2   AGAM     C3     32       0.14     12.011   ; qtot -0.118
-    33       HCA1      2   AGAM     H3     33       0.09      1.008   ; qtot -0.028
-    34      OC311      2   AGAM     O3     34      -0.65    15.9994   ; qtot -0.678
-    35       HCP1      2   AGAM    HO3     35       0.42      1.008   ; qtot -0.258
-    36     CC3161      2   AGAM     C4     36       0.09     12.011   ; qtot -0.168
-    37       HCA1      2   AGAM     H4     37       0.09      1.008   ; qtot -0.078
-    38      OC301      2   AGAM     O4     38      -0.36    15.9994   ; qtot -0.438
-    39      CC2O2      2   AGAM     C6     39       0.52     12.011   ; qtot 0.082
-    40      OC2D2      2   AGAM    O61     40     -0.568    15.9994   ; qtot -0.486
-    41      OC311      2   AGAM    O62     41      -0.63    15.9994   ; qtot -1.116
-    42       HCP1      2   AGAM    HO5     42       0.42      1.008   ; qtot -0.696
-; residue   3 AGAT rtp AGAT q -0.1
-    43     CC3162      3   AGAT     C1     43       0.29     12.011   ; qtot -0.406
-    44       HCA1      3   AGAT     H1     44       0.09      1.008   ; qtot -0.316
-    45     CC3163      3   AGAT     C5     45       0.11     12.011   ; qtot -0.206
-    46       HCA1      3   AGAT     H5     46       0.09      1.008   ; qtot -0.116
-    47     OC3C61      3   AGAT     O5     47       -0.4    15.9994   ; qtot -0.516
-    48     CC3161      3   AGAT     C2     48       0.14     12.011   ; qtot -0.376
-    49       HCA1      3   AGAT     H2     49       0.09      1.008   ; qtot -0.286
-    50      OC311      3   AGAT     O2     50      -0.65    15.9994   ; qtot -0.936
-    51       HCP1      3   AGAT    HO2     51       0.42      1.008   ; qtot -0.516
-    52     CC3161      3   AGAT     C3     52       0.14     12.011   ; qtot -0.376
-    53       HCA1      3   AGAT     H3     53       0.09      1.008   ; qtot -0.286
-    54      OC311      3   AGAT     O3     54      -0.65    15.9994   ; qtot -0.936
-    55       HCP1      3   AGAT    HO3     55       0.42      1.008   ; qtot -0.516
-    56     CC3161      3   AGAT     C4     56       0.14     12.011   ; qtot -0.376
-    57       HCA1      3   AGAT     H4     57       0.09      1.008   ; qtot -0.286
-    58      OC311      3   AGAT     O4     58      -0.65    15.9994   ; qtot -0.936
-    59       HCP1      3   AGAT    HO4     59       0.42      1.008   ; qtot -0.516
-    60      CC2O2      3   AGAT     C6     60       0.52     12.011   ; qtot 0.004
-    61      OC2D2      3   AGAT    O61     61     -0.568    15.9994   ; qtot -0.564
-    62      OC311      3   AGAT    O62     62      -0.63    15.9994   ; qtot -1.194
-    63       HCP1      3   AGAT    HO5     63       0.42      1.008   ; qtot -0.774
+    20      OC2D2      1   AGAI    O61     20      -0.76    15.9994   ; qtot -0.42
+    21      OC2D2      1   AGAI    O62     21      -0.76    15.9994   ; qtot -1.18
+    22       HCP1      1   AGAI    HO5     22       0.42      1.008   ; qtot -0.76
+; residue   2 AGAM rtp AGAM q -0.6
+    23     CC3162      2   AGAM     C1     23       0.29     12.011   ; qtot -0.47
+    24       HCA1      2   AGAM     H1     24       0.09      1.008   ; qtot -0.38
+    25     CC3163      2   AGAM     C5     25       0.11     12.011   ; qtot -0.27
+    26       HCA1      2   AGAM     H5     26       0.09      1.008   ; qtot -0.18
+    27     OC3C61      2   AGAM     O5     27       -0.4    15.9994   ; qtot -0.58
+    28     CC3161      2   AGAM     C2     28       0.14     12.011   ; qtot -0.44
+    29       HCA1      2   AGAM     H2     29       0.09      1.008   ; qtot -0.35
+    30      OC311      2   AGAM     O2     30      -0.65    15.9994   ; qtot -1
+    31       HCP1      2   AGAM    HO2     31       0.42      1.008   ; qtot -0.58
+    32     CC3161      2   AGAM     C3     32       0.14     12.011   ; qtot -0.44
+    33       HCA1      2   AGAM     H3     33       0.09      1.008   ; qtot -0.35
+    34      OC311      2   AGAM     O3     34      -0.65    15.9994   ; qtot -1
+    35       HCP1      2   AGAM    HO3     35       0.42      1.008   ; qtot -0.58
+    36     CC3161      2   AGAM     C4     36       0.09     12.011   ; qtot -0.49
+    37       HCA1      2   AGAM     H4     37       0.09      1.008   ; qtot -0.4
+    38      OC301      2   AGAM     O4     38      -0.36    15.9994   ; qtot -0.76
+    39      CC2O2      2   AGAM     C6     39       0.52     12.011   ; qtot -0.24
+    40      OC2D2      2   AGAM    O61     40      -0.76    15.9994   ; qtot -1
+    41      OC2D2      2   AGAM    O62     41      -0.76    15.9994   ; qtot -1.76
+    42       HCP1      2   AGAM    HO5     42       0.42      1.008   ; qtot -1.34
+; residue   3 AGAT rtp AGAT q -0.4
+    43     CC3162      3   AGAT     C1     43       0.29     12.011   ; qtot -1.05
+    44       HCA1      3   AGAT     H1     44       0.09      1.008   ; qtot -0.96
+    45     CC3163      3   AGAT     C5     45       0.11     12.011   ; qtot -0.85
+    46       HCA1      3   AGAT     H5     46       0.09      1.008   ; qtot -0.76
+    47     OC3C61      3   AGAT     O5     47       -0.4    15.9994   ; qtot -1.16
+    48     CC3161      3   AGAT     C2     48       0.14     12.011   ; qtot -1.02
+    49       HCA1      3   AGAT     H2     49       0.09      1.008   ; qtot -0.93
+    50      OC311      3   AGAT     O2     50      -0.65    15.9994   ; qtot -1.58
+    51       HCP1      3   AGAT    HO2     51       0.42      1.008   ; qtot -1.16
+    52     CC3161      3   AGAT     C3     52       0.14     12.011   ; qtot -1.02
+    53       HCA1      3   AGAT     H3     53       0.09      1.008   ; qtot -0.93
+    54      OC311      3   AGAT     O3     54      -0.65    15.9994   ; qtot -1.58
+    55       HCP1      3   AGAT    HO3     55       0.42      1.008   ; qtot -1.16
+    56     CC3161      3   AGAT     C4     56       0.14     12.011   ; qtot -1.02
+    57       HCA1      3   AGAT     H4     57       0.09      1.008   ; qtot -0.93
+    58      OC311      3   AGAT     O4     58      -0.65    15.9994   ; qtot -1.58
+    59       HCP1      3   AGAT    HO4     59       0.42      1.008   ; qtot -1.16
+    60      CC2O2      3   AGAT     C6     60       0.52     12.011   ; qtot -0.64
+    61      OC2D2      3   AGAT    O61     61      -0.76    15.9994   ; qtot -1.4
+    62      OC2D2      3   AGAT    O62     62      -0.76    15.9994   ; qtot -2.16
+    63       HCP1      3   AGAT    HO5     63       0.42      1.008   ; qtot -1.74
 
 [ bonds ]
 ;  ai    aj funct            c0            c1            c2            c3
@@ -116,7 +116,7 @@ Other               3
    16    18     1 
    19    20     1 
    19    21     1 
-   21    22     1 
+   20    22     1 
    23    24     1 
    23    27     1 
    23    28     1 
@@ -136,7 +136,7 @@ Other               3
    36    38     1 
    39    40     1 
    39    41     1 
-   41    42     1 
+   40    42     1 
    43    44     1 
    43    47     1 
    43    48     1 
@@ -157,7 +157,6 @@ Other               3
    58    59     1 
    60    61     1 
    60    62     1 
-   62    63     1 
 
 [ pairs ]
 ;  ai    aj funct            c0            c1            c2            c3
@@ -216,7 +215,7 @@ Other               3
    16    21     1 
    17    19     1 
    18    19     1 
-   20    22     1 
+   21    22     1 
    23    26     1 
    23    31     1 
    23    33     1 
@@ -265,7 +264,7 @@ Other               3
    36    41     1 
    37    39     1 
    38    39     1 
-   40    42     1 
+   41    42     1 
    43    46     1 
    43    51     1 
    43    53     1 
@@ -280,7 +279,6 @@ Other               3
    45    53     1 
    45    54     1 
    45    59     1 
-   45    63     1 
    46    52     1 
    46    57     1 
    46    58     1 
@@ -317,7 +315,6 @@ Other               3
    57    59     1 
    57    60     1 
    58    60     1 
-   61    63     1 
 
 [ angles ]
 ;  ai    aj    ak funct            c0            c1            c2            c3
@@ -358,7 +355,7 @@ Other               3
     5    19    20     5 
     5    19    21     5 
    20    19    21     5 
-   19    21    22     5 
+   19    20    22     5 
    24    23    27     5 
    24    23    28     5 
    27    23    28     5 
@@ -392,7 +389,7 @@ Other               3
    25    39    40     5 
    25    39    41     5 
    40    39    41     5 
-   39    41    42     5 
+   39    40    42     5 
    44    43    47     5 
    44    43    48     5 
    47    43    48     5 
@@ -427,7 +424,6 @@ Other               3
    45    60    61     5 
    45    60    62     5 
    61    60    62     5 
-   60    62    63     5 
 
 [ dihedrals ]
 ;  ai    aj    ak    al funct            c0            c1            c2            c3            c4            c5
@@ -488,8 +484,8 @@ Other               3
    14    12    16     5     9 
    14    12    16    17     9 
    14    12    16    18     9 
-    5    19    21    22     9 
-   20    19    21    22     9 
+    5    19    20    22     9 
+   21    19    20    22     9 
    24    23    27    25     9 
    28    23    27    25     9 
    24    23    28    29     9 
@@ -540,8 +536,8 @@ Other               3
    34    32    36    25     9 
    34    32    36    37     9 
    34    32    36    38     9 
-   25    39    41    42     9 
-   40    39    41    42     9 
+   25    39    40    42     9 
+   41    39    40    42     9 
    44    43    47    45     9 
    48    43    47    45     9 
    44    43    48    49     9 
@@ -595,8 +591,6 @@ Other               3
    45    56    58    59     9 
    52    56    58    59     9 
    57    56    58    59     9 
-   45    60    62    63     9 
-   61    60    62    63     9 
 
 ; Include Position restraint file
 #ifdef POSRES

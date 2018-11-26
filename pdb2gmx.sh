@@ -1,7 +1,7 @@
 #!/bin/bash
 # H_AGALA
 
-export cl=10                       #chain length ; number of agal sugar units in chain
+export cl=3                       #chain length ; number of agal sugar units in chain
 let "mr =24 +19 * (cl-2)"          # mr; the last line which corresponds to AGAM residue, the AGAM lines start at 24 and increment as 1 resdiue =19 lines
 export MR=$mr
 let "lr =$MR +19"                  #lr; the last line which corresponds to AGAT residue
