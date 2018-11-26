@@ -2,7 +2,7 @@
 ;	File 'topol.top' was generated
 ;	By user: mssnkt (14191)
 ;	On host: llcapo.csc.warwick.ac.uk
-;	At date: Mon Nov 26 11:22:44 2018
+;	At date: Mon Nov 26 12:13:59 2018
 
 ;
 ;	This is a standalone topology file
@@ -47,7 +47,7 @@ Other               3
     18      OC301      1   AGAI     O4     18      -0.36    15.9994   ; qtot -0.18
     19      CC2O2      1   AGAI     C6     19       0.52     12.011   ; qtot 0.34
     20      OC2D2      1   AGAI    O61     20     -0.568    15.9994   ; qtot -0.228
-    21      OC311      1   AGAI    O62     21      -0.63    15.9994   ; qtot -0.858
+    21      OC2D2      1   AGAI    O62     21      -0.63    15.9994   ; qtot -0.858
     22       HCP1      1   AGAI    HO5     22       0.42      1.008   ; qtot -0.438
 ; residue   2 AGAM rtp AGAM q -0.3
     23     CC3162      2   AGAM     C1     23       0.29     12.011   ; qtot -0.148
@@ -68,7 +68,7 @@ Other               3
     38      OC301      2   AGAM     O4     38      -0.36    15.9994   ; qtot -0.438
     39      CC2O2      2   AGAM     C6     39       0.52     12.011   ; qtot 0.082
     40      OC2D2      2   AGAM    O61     40     -0.568    15.9994   ; qtot -0.486
-    41      OC311      2   AGAM    O62     41      -0.63    15.9994   ; qtot -1.116
+    41      OC2D2      2   AGAM    O62     41      -0.63    15.9994   ; qtot -1.116
     42       HCP1      2   AGAM    HO5     42       0.42      1.008   ; qtot -0.696
 ; residue   3 AGAT rtp AGAT q -0.1
     43     CC3162      3   AGAT     C1     43       0.29     12.011   ; qtot -0.406
@@ -90,7 +90,7 @@ Other               3
     59       HCP1      3   AGAT    HO4     59       0.42      1.008   ; qtot -0.516
     60      CC2O2      3   AGAT     C6     60       0.52     12.011   ; qtot 0.004
     61      OC2D2      3   AGAT    O61     61     -0.568    15.9994   ; qtot -0.564
-    62      OC311      3   AGAT    O62     62      -0.63    15.9994   ; qtot -1.194
+    62      OC2D2      3   AGAT    O62     62      -0.63    15.9994   ; qtot -1.194
     63       HCP1      3   AGAT    HO5     63       0.42      1.008   ; qtot -0.774
 
 [ bonds ]
