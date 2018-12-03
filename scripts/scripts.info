@@ -1,5 +1,5 @@
 Workflow
-set cl inseqfile.seq                   [output:doglycans pdb]
+set cl in seqfile.seq                   [output:doglycans pdb]
 bash pdb2gmx.sh -> FF jul2017*         [output:gromacs pdb]
 bash selective_HO5.sh -> FF Nov 2018*  [output:topology]
 bash glink.sh                          [output:final topology with glycosidic links]
