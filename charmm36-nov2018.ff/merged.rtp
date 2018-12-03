@@ -8433,8 +8433,58 @@
 	   C6   H62
 	   C6   H63
 	   C5    O5
-
+;*************************** HGB residues ****************************
 [ AGAI ] ****
+ [ atoms ]
+         C1  CC3162   0.340   1
+         H1    HCA1   0.090   2
+         O1   OC311  -0.650   3
+        HO1    HCP1   0.420   4
+         C5  CC3163   0.110   5
+         H5    HCA1   0.090   6
+         O5  OC3C61  -0.400   7
+         C2  CC3161   0.140   8
+         H2    HCA1   0.090   9
+         O2   OC311  -0.650  10
+        HO2    HCP1   0.420  11
+         C3  CC3161   0.140  12
+         H3    HCA1   0.090  13
+         O3   OC311  -0.650  14
+        HO3    HCP1   0.420  15
+         C4  CC3161   0.090  16
+         H4    HCA1   0.090  17
+         O4   OC301  -0.360  18
+         C6   CC2O2   0.520  19
+        O61   OC2D2  -0.568  20  ; -> stays OC2D2 ; but charge goes from -0.760 to -0.568
+        O62   OC2D2  -0.630  21  ; -> OC311 ; also, -0.760 -> -0.630 ; NOPE - stays OC2D2
+       ; HO5    HCP1   0.420  22
+[ bonds ]
+        C1    O1
+        C1    H1
+        O1   HO1
+        C1    O5
+        C1    C2
+        C2    H2
+        C2    O2
+        O2   HO2
+        C2    C3
+        C3    H3
+        C3    O3
+        O3   HO3
+        C3    C4
+        C4    H4
+        C4    O4
+       ; O4   HO4
+        C4    C5
+        C5    H5
+        C5    C6
+        C6   O61
+        C6   O62
+        C5    O5
+       ;O62   HO5 ; -> O62   HO5
+
+
+[ AGHI ] ****
  [ atoms ]
          C1  CC3162   0.340   1  
          H1    HCA1   0.090   2  
@@ -8483,8 +8533,54 @@
         C5    O5 
        O62   HO5 ; -> O62   HO5
 
-
 [ AGAM ] ****
+ [ atoms]
+         C1   CC3162   0.290   1
+         H1     HCA1   0.090   2
+         C5   CC3163   0.110   3
+         H5     HCA1   0.090   4
+         O5   OC3C61  -0.400   5
+         C2   CC3161   0.140   6
+         H2     HCA1   0.090   7
+         O2    OC311  -0.650   8
+        HO2     HCP1   0.420   9
+         C3   CC3161   0.140  10
+         H3     HCA1   0.090  11
+         O3    OC311  -0.650  12
+        HO3     HCP1   0.420  13
+         C4   CC3161   0.090  14
+         H4     HCA1   0.090  15
+         O4    OC301  -0.360  16
+         C6    CC2O2   0.520  17
+        O61    OC2D2  -0.568  18
+        O62    OC2D2  -0.630  19
+       ; HO5     HCP1   0.420  20
+[ bonds ]
+     ;   C1    O1
+        C1    H1
+     ;   O1   HO1
+        C1    O5
+        C1    C2
+        C2    H2
+        C2    O2
+        O2   HO2
+        C2    C3
+        C3    H3
+        C3    O3
+        O3   HO3
+        C3    C4
+        C4    H4
+        C4    O4
+      ;  O4   HO4
+        C4    C5
+        C5    H5
+        C5    C6
+        C6   O61
+        C6   O62
+        C5    O5
+        ;O62   HO5
+
+[ AGHM ] ****
  [ atoms]
          C1   CC3162   0.290   1
          H1     HCA1   0.090   2  
@@ -8531,7 +8627,57 @@
         C5    O5 
         O62   HO5
 
-[ AGAT]  ****                            
+[ AGAT]  ****
+ [ atoms ]
+        C1   CC3162    0.290   1
+        H1     HCA1    0.090   2
+        C5   CC3163    0.110   3
+        H5     HCA1    0.090   4
+        O5   OC3C61   -0.400   5
+        C2   CC3161    0.140   6
+        H2     HCA1    0.090   7
+        O2    OC311   -0.650   8
+       HO2     HCP1    0.420   9
+        C3   CC3161    0.140  10
+        H3     HCA1    0.090  11
+        O3    OC311   -0.650  12
+       HO3     HCP1    0.420  13
+        C4   CC3161    0.140  14
+        H4     HCA1    0.090  15
+        O4    OC311   -0.650  16
+       HO4     HCP1    0.420  17
+        C6    CC2O2    0.520  18
+       O61    OC2D2   -0.568  19
+       O62    OC2D2   -0.630  20
+      ; HO5     HCP1    0.420  21
+ [ bonds ]     
+   ;     C1    O1
+        C1    H1
+    ;    O1   HO1
+        C1    O5
+        C1    C2
+        C2    H2
+        C2    O2
+        O2   HO2
+        C2    C3
+        C3    H3
+        C3    O3
+        O3   HO3
+        C3    C4
+        C4    H4
+        C4    O4
+        O4   HO4
+        C4    C5
+        C5    H5
+        C5    C6
+        C6   O61
+        C6   O62
+        C5    O5
+      ; O62   HO5
+
+
+
+[ AGHT]  ****                            
  [ atoms ]
         C1   CC3162    0.290   1
         H1     HCA1    0.090   2  
@@ -8578,7 +8724,7 @@
         C6   O62
         C5    O5 
        O62   HO5
-
+;********************************************************** HGB residues end**************************
 ;[ AGAI ] ; 1st sugar within an AGAL chain
 ;  [ atoms ]
 ;           C1 CC3162  0.340  0  
