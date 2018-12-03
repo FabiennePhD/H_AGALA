@@ -1,7 +1,6 @@
 #!/bin/bash
 #script to selectively deprotonate HGB chain, output is topol
-#workflow:
-# doglycans.sh -> pdb2gmx.sh -> glinks.sh (this stage:fully protonated system ready to go) -> selective_HO5.sh
+
 
 
 f_path="./"
