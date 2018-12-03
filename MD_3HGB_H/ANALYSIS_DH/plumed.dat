@@ -1,0 +1,50 @@
+# data file for getting torison angles of HG10..the angles are defnied as per paper Beglund et al 2016,88,56-70, psi_Braccini is defined as per Braccini 1999,317,119-130
+# dh n. 1 for the 10 units (phi)
+#dh_1_1: TORSION ATOMS=25,21,17,15 #  25,21,17,15 in VMD -> corresponds to 26,22,18,16 in plumed!
+
+#phi
+#dh_1_1: TORSION ATOMS=27,23,18,16
+#dh_1_2: TORSION ATOMS=47,43,38,36
+
+#psi
+#dh_1_1: TORSION ATOMS=23,18,16,5
+#dh_1_2: TORSION ATOMS=43,38,36,25
+
+
+#gamma O5-C5-C6-O62
+#dh_3_1: TORSION ATOMS=7,5,19,21
+#dh_3_2: TORSION ATOMS=27,25,39,41
+#dh_3_3: TORSION ATOMS=47,45,60,62
+
+#chi C5-C6-O62-HO5
+#dh_4_1: TORSION ATOMS=5,19,21,22
+#dh_4_2: TORSION ATOMS=25,39,41,42
+#dh_4_3: TORSION ATOMS=45,60,62,63
+
+#gamma1 reducing residue only
+#dh_5_1: TORSION ATOMS=47,45,60,61
+
+#angles C6-O61-HO5N
+a: ANGLE ATOMS=60,62,63
+#a: ANGLE ATOMS=39,41,42
+#a: ANGLE ATOMS=19,21,22
+
+PRINT ARG=a FILE=COH_angle1.out STRIDE=1
+FLUSH STRIDE=1
+
+#PRINT ARG=dh_1_1,dh_1_2 FILE=phi.out STRIDE=1
+#FLUSH STRIDE=1
+
+#PRINT ARG=dh_1_1,dh_1_2 FILE=psi.out STRIDE=1
+#FLUSH STRIDE=1
+
+#PRINT ARG=dh_3_1,dh_3_2,dh_3_3 FILE=gamma.out STRIDE=1
+#FLUSH STRIDE=1
+
+#PRINT ARG=dh_4_1,dh_4_2,dh_4_3 FILE=chi.out STRIDE=1
+#FLUSH STRIDE=1
+
+#PRINT ARG=dh_4_1, FILE=gamma1.out STRIDE=1
+#FLUSH STRIDE=1
+
+
