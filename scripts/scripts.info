@@ -5,8 +5,16 @@ bash selective_HO5.sh -> FF Nov 2018*  [output:topology]
 bash glink.sh                          [output:final topology with glycosidic links]
 
 
-*because the HO5 parameters were added to the Nov 2018 FF, simply taking the merged.rtp file and placing under Jul 2017 FF causes errors.
-Also, Jul 2017 only reflects fully protonated residues, which is fine for generating an intial pdb which is then porcessed further...
-...Nv 2018 contains protonated and deprotonated residues:
+*because the HO5 parameters were added to the Nov 2018 FF, simply taking the ffbonded.itp file and placing under Jul 2017 FF causes errors.
+Jul 2017 only reflects fully protonated residues (which is fine for generating an intial pdb) but as I go on to selevtively deprotonate-> I then relabel the protonated residues (AGAI AGAM AGAT -> AGHI AGHM AGHT) this needs to be reflected in the merged.rtp by changing the residue names from AGAI AGAM AGAT -> AGHI AGHM AGHT.
+In turn AGAI AGAM AGAT now represent deprotonated residues- which needs to be reflected in the rtp.
+
+Essentially:
+...Nov 2018 contains protonated and deprotonated residues:
 protonated - AGHI, AGHM, AGHT
 deprotonated -AGAI, AGAM, AGAT
+
+**it might make more sense to rename the deprotonated residues, so that:
+AGAI, AGAM, AGAT stay as is, representing protonated form
+some other name representing deprotonated form
+this way I don't need to use two FFs reflecting different rtps.
