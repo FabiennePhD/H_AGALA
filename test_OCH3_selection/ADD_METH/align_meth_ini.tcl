@@ -1,5 +1,5 @@
 # from meth.xyz to meth_z_aligned.xyz
-#
+
 set oxy [atomselect top "index 1" ]
 set carb [atomselect top "index 0" ]
 set c_oxy_x [ $oxy get  { x } ]

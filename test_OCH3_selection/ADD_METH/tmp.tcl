@@ -1,10 +1,11 @@
-# For some reason, uncommenting these crashes my VMD on MacOs...
-#package require topotools
+set auto_path [linsert $auto_path 0 /Applications/VMD\ 1.9.1.app/Contents/vmd/plugins] 
+
+package require topotools
 #package require psfgen
 #package require pbctools
 
-set pdb_file PDB_TBF
-set meth_file METH_TBF
+set pdb_file 3HGB.pdb
+set meth_file meth_z_aligned.xyz
 
 set midlist {}
 set mol [mol new $pdb_file waitfor all]

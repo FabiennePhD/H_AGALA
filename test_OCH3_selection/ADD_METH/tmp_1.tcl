@@ -3,7 +3,7 @@
 #package require psfgen
 #package require pbctools
 
-set pdb_file PDB_TBF
+set pdb_file 3HGB.pdb
 set meth_file METH_TBF
 
 set midlist {}
