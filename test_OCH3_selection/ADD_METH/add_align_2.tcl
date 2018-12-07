@@ -22,7 +22,7 @@ proc find_axis {arg1 arg2} {
 # load .pdb
 mol new $pdb_file waitfor all
 
-## meth C-O axis along the z-axis - should not be necessary...
+# orient the meth C-O axis along the z-axis - should not be necessary, but hey...
 set meth [ atomselect top "name \".*XX\"" ] 
 set cxx [ atomselect top "name CXX" ]
 set oxx [ atomselect top "name OXX" ]
@@ -32,12 +32,10 @@ $meth move $M
 set M [transaxis y -90]
 $meth move $M
 
-# C6-C5 axis along the z-axis
+# Move C5X in { 0 0 0 }
 set rest [atomselect top "not name \".*XX\"" ]
 set co [ atomselect top "name C6X" ]
 set ct [ atomselect top "name C5X" ]
-
-# 
 set ox_x [ $ct get  { x } ]
 set ox_y [ $ct get  { y } ]
 set ox_z [ $ct get  { z } ]
@@ -45,6 +43,7 @@ set ox_p "$ox_x $ox_y $ox_z"
 set ox_oh_m [vecscale $ox_p -1]
 $rest moveby $ox_oh_m
 
+# orient the C6-C5 axis along the z-axis
 set co [ atomselect top "name C6X" ]
 set ct [ atomselect top "name C5X" ]
 set cc_ax [find_axis $ct $co]
@@ -53,43 +52,24 @@ $rest move $M
 set M [transaxis y -90]
 $rest move $M
 
-# Fuck - this is the distance vector, not the versor...
-# Not important - need to shift C5 in zero!
-#
-# DONE ! Now
-
-
+# move the meth group on top
 set meth [ atomselect top "name \".*XX\"" ] 
 set ox [ atomselect top "name OXX" ]
 set oh [ atomselect top "name O6X" ]
 $meth moveby [find_axis $ox $oh]
-#
-## Find the C6-C5 axis
-#set c6 [ atomselect top "name C6X" ]
-#set c5 [ atomselect top "name C5X" ]
-#set c65_ax [find_axis $c6 $c5]
-#
-### Find the CXX OXX axis
-##set cxx [ atomselect top "name CXX" ]
-##set oxx [ atomselect top "name OXX" ]
-##set cox_ax [find_axis $cxx $oxx]
-##
-###set rest [atomselect top "not name \".*XX\"" ]
-###set M [transvecinv $c65_ax]
-###$rest move $M
-###set M [transaxis y -90]
-###$rest move $M
-##
-##set M [transvecinv $cox_ax]
-##$meth move $M
-##set M [transaxis y -90]
-##$meth move $M
 
-set all [atomselect top "all"]
-$all writepdb test.pdb 
+# un-flag the X atoms... needed for more CH3 groups later on!
+$co set name "C5 "
+$ct set name "C6 "
+$oh set name "O6B"
+set cx [ atomselect top "name CXX" ]
+$cx set name "CM "
+set hx [ atomselect top "name HXX" ]
+$hx set name "HM "
 
-# delete OXX - by not writin that selection!
-
+# delete OXX - by not writing it down...
+set all [atomselect top "not name OXX"]
+$all writepdb plus.pdb 
 
 exit
 
