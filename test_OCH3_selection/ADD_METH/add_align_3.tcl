@@ -24,16 +24,6 @@ proc find_axis {arg1 arg2} {
 # load .pdb
 mol new $pdb_file waitfor all
 
-# orient the meth C-O axis along the z-axis - should not be necessary, but hey...
-set meth [ atomselect top "name \".*XX\"" ] 
-set cxx [ atomselect top "name CXX" ]
-set oxx [ atomselect top "name OXX" ]
-set cox_ax [find_axis $cxx $oxx]
-set M [transvecinv $cox_ax]
-$meth move $M
-set M [transaxis y -90]
-$meth move $M
-
 # Move C5X in { 0 0 0 }
 set rest [atomselect top "not name \".*XX\"" ]
 set co [ atomselect top "name C6X" ]
@@ -54,7 +44,7 @@ $rest move $M
 set M [transaxis y -90]
 $rest move $M
 
-# move the meth group on top
+# move the -OH group on top of O6B
 set meth [ atomselect top "name \".*XX\"" ] 
 set ox [ atomselect top "name OXX" ]
 set oh [ atomselect top "name O6X" ]
@@ -65,13 +55,10 @@ $co set name "C5 "
 $ct set name "C6 "
 $oh set name "O6B"
 set cx [ atomselect top "name CXX" ]
-set A CM
-set B $which_res
-set C [concat $A $B]
-set D [string map {" " ""} $C]
-$cx set name $D
+$cx set name "CM "
 set hx [ atomselect top "name HXX" ]
-set A HM
+set A HO5
+set B $which_res
 set C [concat $A $B]
 set D [string map {" " ""} $C]
 $hx set name $D
@@ -82,5 +69,5 @@ $all writepdb plus.pdb
 
 exit
 
-#vmd -dispdev none -e add_align_2.tcl 
+#vmd -dispdev none -e add_align_3.tcl 
 
