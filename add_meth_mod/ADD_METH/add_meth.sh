@@ -1,36 +1,57 @@
 #!/bin/bash
 
 where=`pwd`
-i_file="3HGB.pdb" # .pdb file containing the inital structure
-o_name="O6B" # atom type of the oxygen (in the .pdb) we want to add the CH_3 to - I did not check  it's the right one, can be O6B as well...
-pdb_file="3HGB.pdb" # original configuration
+
+###
+# Choose your .pdf file and your oxygen name - to add stuff to!!
+#pdb_file="conf_3.pdb" # original configuration
+#o_name="O62"
+pdb_file="10HGB.pdb"
+o_name="O6B"
+###
+
 meth_file="meth_z_aligned.xyz" # .xyz containing the methyesterified residue + oxygen (the latter to be removed): O-C-H_3
 oh_file="oh_aligned.xyz"
 
+###
+# Change stuff according to whether you are running LiNuX or MacOS...
+# sed executable
+# MacOS...
+ssed="/opt/local/bin/gsed"
+# Linux
+#ssed=/usr/bin/sed
+
+# sed executable
+# MacOS...
+vmd_d="cave"
+# Linux
+#vmd_d=none
+
 # VMD executable - machine dependent
-#VMD="/Applications/VMD 1.9.1.app/Contents/vmd/vmd_MACOSXX86"
-VMD="/home/chem/mssnkt/CODES/VMD/vmd-1.9.3/VMD_BIN/vmd"
+VMD="/Applications/VMD 1.9.1.app/Contents/vmd/vmd_MACOSXX86"
+#VMD="/home/chem/mssnkt/CODES/VMD/vmd-1.9.3/VMD_BIN/vmd"
 # On SCRTP machines:
-# VMD="/warwick/vmd/1.9.1/x86_64/bin/vmd"
+#VMD="/warwick/vmd/1.9.1/x86_64/bin/vmd"
+###
 
 cd $where
 
-n_res=`grep $o_name $i_file | wc -l` # get the number of residues
+n_res=`grep $o_name $pdb_file | wc -l` # get the number of residues
 
 # Check that we have unique identifiers for C5, C6 and O6B in the initial .pdb
 t=`grep C5 $pdb_file | wc -l`
 if [[ $t -ne $n_res ]]; then
-   "Check your .pdb"
+   echo "Check your .pdb"
    exit 0
 fi
 t=`grep C6 $pdb_file | wc -l`
 if [[ $t -ne $n_res ]]; then
-   "Check your .pdb"
+   echo "Check your .pdb"
    exit 0
 fi
-t=`grep O6B $pdb_file | wc -l`
+t=`grep $o_name $pdb_file | wc -l`
 if [[ $t -ne $n_res ]]; then
-   "Check your .pdb"
+   echo "Check your .pdb"
    exit 0
 fi
 
@@ -73,46 +94,47 @@ if [[ $c -ne 0 ]]; then
        echo "adding -CH_3 to carboxylic oxygen: " $i " of " $c
        if [[ $i -eq 1 ]]; then
           cp add_align_1.tcl tmp.tcl
-          sed -i "s/PDB_TBF/$pdb_file/g" tmp.tcl 
-          sed -i "s/METH_TBF/$meth_file/g" tmp.tcl
-          "$VMD" -dispdev none -e tmp.tcl > vmd.log
-          exit 0 
+          $ssed -i "s/PDB_TBF/$pdb_file/g" tmp.tcl 
+          $ssed -i "s/METH_TBF/$meth_file/g" tmp.tcl
+          "$VMD" -dispdev $vmd_d -e tmp.tcl > vmd.log
           # Modify the resulting merged.pdb file to flag the atoms we need to move/rotate stuff...
           # Flag C5 - within the right residue
           line=`grep -n C5 merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-          sed -i ""$line"s/C5 /C5X/g" merged.pdb    
+          $ssed -i ""$line"s/C5 /C5X/g" merged.pdb    
           # Flag C6 - within the right residue
           line=`grep -n C6 merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-          sed -i ""$line"s/C6 /C6X/g" merged.pdb
+          $ssed -i ""$line"s/C6 /C6X/g" merged.pdb
           # Flag O6B - within the right residue
-          line=`grep -n O6B merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1` # CHECK!
-          sed -i ""$line"s/O6B/O6X/g" merged.pdb
+          line=`grep -n $o_name merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1` # CHECK!
+          $ssed -i ""$line"s/$o_name/O6X/g" merged.pdb
           # Do the magic
           cp add_align_2.tcl tmp.tcl
-          sed -i "s/WRRR/${which_res[$i]}/g" tmp.tcl
-          "$VMD" -dispdev none -e tmp.tcl > vmd.log
+          $ssed -i "s/WRRR/${which_res[$i]}/g" tmp.tcl
+          $ssed -i "s/O_NAME/$o_name/g" tmp.tcl
+          "$VMD" -dispdev $vmd_d -e tmp.tcl > vmd.log
        fi
        if [[ $i -gt 1 ]]; then
           # We are adding other CH3 groups!
           cp add_align_1.tcl tmp.tcl
-          sed -i "s/PDB_TBF/plus.pdb/g" tmp.tcl 
-          sed -i "s/METH_TBF/$meth_file/g" tmp.tcl
-          "$VMD" -dispdev none -e tmp.tcl > vmd.log
+          $ssed -i "s/PDB_TBF/plus.pdb/g" tmp.tcl 
+          $ssed -i "s/METH_TBF/$meth_file/g" tmp.tcl
+          "$VMD" -dispdev $vmd_d -e tmp.tcl > vmd.log
           # Modify the resulting merged.pdb file to flag the atoms we need to move/rotate stuff...
           # Flag C5 - within the right residue
           line=`grep -n C5 merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-          sed -i ""$line"s/C5 /C5X/g" merged.pdb
+          $ssed -i ""$line"s/C5 /C5X/g" merged.pdb
           # Flag C6 - within the right residue
           line=`grep -n C6 merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-          sed -i ""$line"s/C6 /C6X/g" merged.pdb
+          $ssed -i ""$line"s/C6 /C6X/g" merged.pdb
           # Flag O6B - within the right residue
-          line=`grep -n O6B merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-          sed -i ""$line"s/O6B/O6X/g" merged.pdb
+          line=`grep -n $o_name merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
+          $ssed -i ""$line"s/$o_name/O6X/g" merged.pdb
           # Do the magic
           echo ${which_res[$i]}
           cp add_align_2.tcl tmp.tcl
-          sed -i "s/WRRR/${which_res[$i]}/g" tmp.tcl
-          "$VMD" -dispdev none -e tmp.tcl > vmd.log
+          $ssed -i "s/WRRR/${which_res[$i]}/g" tmp.tcl
+          $ssed -i "s/O_NAME/$o_name/g" tmp.tcl
+          "$VMD" -dispdev $vmd_d -e tmp.tcl > vmd.log
        fi
    done
    
@@ -176,23 +198,23 @@ fi
 for (( i=1; i<=$c; i++ )); do
     echo "adding H to carboxylic oxygen: " $i " of " $c
     cp add_align_1.tcl tmp.tcl
-    sed -i "s/PDB_TBF/plus.pdb/g" tmp.tcl
-    sed -i "s/METH_TBF/$oh_file/g" tmp.tcl
-    "$VMD" -dispdev none -e tmp.tcl > vmd.log
+    $ssed -i "s/PDB_TBF/plus.pdb/g" tmp.tcl
+    $ssed -i "s/METH_TBF/$oh_file/g" tmp.tcl
+    "$VMD" -dispdev $vmd_d -e tmp.tcl > vmd.log
     # Modify the resulting merged.pdb file to flag the atoms we need to move/rotate stuff...
     # Flag C5 - within the right residue
     line=`grep -n C5 merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-    sed -i ""$line"s/C5 /C5X/g" merged.pdb
+    $ssed -i ""$line"s/C5 /C5X/g" merged.pdb
     # Flag C6 - within the right residue
     line=`grep -n C6 merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1`
-    sed -i ""$line"s/C6 /C6X/g" merged.pdb
+    $ssed -i ""$line"s/C6 /C6X/g" merged.pdb
     # Flag O6B - within the right residue
-    line=`grep -n O6B merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1` # CHECK!
-    sed -i ""$line"s/O6B/O6X/g" merged.pdb
+    line=`grep -n $o_name merged.pdb | head -${which_res[$i]} | tail -1 | cut -d":" -f1` # CHECK!
+    $ssed -i ""$line"s/$o_name/O6X/g" merged.pdb
     # Do the magic
     cp add_align_3.tcl tmp.tcl
-    sed -i "s/WRRR/${which_res[$i]}/g" tmp.tcl
-    "$VMD" -dispdev none -e tmp.tcl > vmd.log
+    $ssed -i "s/WRRR/${which_res[$i]}/g" tmp.tcl
+    "$VMD" -dispdev $vmd_d -e tmp.tcl > vmd.log
 done
 
 # cleanup
