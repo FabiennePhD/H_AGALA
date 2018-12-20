@@ -1,0 +1,14 @@
+1. seqfile.seq - set chain length
+
+2. doglycans.sh - obtain a pdb
+
+3. pdb2gmx.sh - modify pdb and protonate the whole chain (select jul FF, only want .pdb as output ignore topology)
+
+4. selective_HO5.sh - selectively deporotonate chain (select nov FF), outputs a pdb and topology (with glinks included) -> ready to go if you don't require methylation
+
+5. If methylation required:
+* cp pdb from step 4 to ADD_METH folder
+* add_meth.sh -> methylate residues, output is a plus.pdb
+* cp plus.pdb back to working directory
+* move_meth.sh - obtain pdb and topology (select nov FF), make sure you specify in script which residues have been methylated (x) and the chain legnth of HGB (CL) -> ready to go
+	
