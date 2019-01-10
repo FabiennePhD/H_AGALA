@@ -7,27 +7,10 @@
 f_path="./"
 t_file="conf.pdb"
 
-HO5=($(grep -n "HO5" $f_path/$t_file | awk '{print $2}'))
-
-#store line 2 and 3 in conf.pdb as a string
-l=${#HO5[@]}
-stringH=()
-for ((i=0; i<=(${l}); i++)); do
-    stringH+="${HO5[i]}  HO5 "
-done
-
-#turn string into array
-read -a  arr  <<< $stringH
-len=${#arr[@]}
-#echo ${len}
-
-#use sed to remove lines based on variables stored in array
-atoms_to_remove=(1 5 10 15) # ***************  #          assign indices to array variables **this line will define the patterning of deprotonation on HGB**
+atoms_to_remove=(1 5 6)  #**** residues from which HO5 is deleted
 for ((j=0; j<${#atoms_to_remove[@]}; j++)); do
-	i=${atoms_to_remove[j]}
-	delet=$(printf "%s  %s\n" ${HO5[i-1]} "HO5")
-	#echo "${delet}"
-	sed -i "/${delet}/d" conf.pdb
+             delet[j]=$(awk '{if ($3=="HO5" && $5=='${atoms_to_remove[j]}') print NR}' conf.pdb)
+             sed -i "${delet[j]}d" conf.pdb
 done
 
 #correct for wonky columns
