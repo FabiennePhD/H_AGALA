@@ -59,25 +59,25 @@ for ((i=0; i<${#CM_pos[@]}; i++)); do  #move the CMx and HMX values underneath t
 	if [ ${x[i]} == 1 ]; then
 		#echo "first"
  		sed  -i -e "$(($new_O62+5 -25)),$(($new_O62+5)) s/AGAIX/OMEIX/g" plus.pdb  # inital residue line range is C1-H93, where 25 = line with H93 i.e $(($new_O62+5)
-            	sed  -i -e "s/C7      X   1/C7  OMEIX   ${x[i]}/g" plus.pdb # works for all middle residues
-             	sed  -i -e "s/H91     X   1/H91 OMEIX   ${x[i]}/g" plus.pdb # works for all middle residues
-             	sed  -i -e "s/H92     X   1/H92 OMEIX   ${x[i]}/g" plus.pdb # works for all middle residues             
-		sed  -i -e "s/H93     X   1/H93 OMEIX   ${x[i]}/g" plus.pdb # works for all middle residues --> below tackles first and last residues
+            	sed  -i -e "s/C7      X   1/C7  OMEIX   ${x[i]}/g" plus.pdb 
+             	sed  -i -e "s/H91     X   1/H91 OMEIX   ${x[i]}/g" plus.pdb 
+             	sed  -i -e "s/H92     X   1/H92 OMEIX   ${x[i]}/g" plus.pdb             
+		sed  -i -e "s/H93     X   1/H93 OMEIX   ${x[i]}/g" plus.pdb  
 	elif [ ${x[i]} == $CL ]; then
 #		#echo "end"
      		sed  -i -e "$(($new_O62+5 -24)),$(($new_O62+5)) s/AGATX/OMETX/g" plus.pdb  # end residue H93  i.e.$(($new_O62+5) -> to C1 (H93-24=line C1)
-		sed  -i -e "s/C7      X   1/C7  OMETX   ${x[i]}/g" plus.pdb # works for all middle residues
-                sed  -i -e "s/H91     X   1/H91 OMETX   ${x[i]}/g" plus.pdb # works for all middle residues
-                sed  -i -e "s/H92     X   1/H92 OMETX   ${x[i]}/g" plus.pdb # works for all middle residues             
-                sed  -i -e "s/H93     X   1/H93 OMETX   ${x[i]}/g" plus.pdb # works for all middle residues --> below tackles first and last residues
+		sed  -i -e "s/C7      X   1/C7  OMETX   ${x[i]}/g" plus.pdb 
+                sed  -i -e "s/H91     X   1/H91 OMETX   ${x[i]}/g" plus.pdb 
+                sed  -i -e "s/H92     X   1/H92 OMETX   ${x[i]}/g" plus.pdb             
+                sed  -i -e "s/H93     X   1/H93 OMETX   ${x[i]}/g" plus.pdb 
 
 	else
 		#echo "middle"	
 		sed  -i -e "$(($new_O62+5 -23)),$(($new_O62+5)) s/AGAMX/OMEMX/g" plus.pdb  # middle residues line range is line with H93 i.e.$(($new_O62+5) -> to C1 (H93-23=line C1)
-		sed  -i -e "s/C7      X   1/ C7  OMEMX   ${x[i]}/g" plus.pdb # works for all middle residues
-		sed  -i -e "s/H91     X   1/ H91 OMEMX   ${x[i]}/g" plus.pdb # works for all middle residues
-		sed  -i -e "s/H92     X   1/ H92 OMEMX   ${x[i]}/g" plus.pdb # works for all middle residues
-		sed  -i -e "s/H93     X   1/ H93 OMEMX   ${x[i]}/g" plus.pdb # works for all middle residues --> below tackles first and last residues
+		sed  -i -e "s/C7      X   1/ C7  OMEMX   ${x[i]}/g" plus.pdb 
+		sed  -i -e "s/H91     X   1/ H91 OMEMX   ${x[i]}/g" plus.pdb 
+		sed  -i -e "s/H92     X   1/ H92 OMEMX   ${x[i]}/g" plus.pdb 
+		sed  -i -e "s/H93     X   1/ H93 OMEMX   ${x[i]}/g" plus.pdb 
 	fi
 
 
