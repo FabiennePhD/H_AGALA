@@ -1,0 +1,43 @@
+;define                  = -DREST_ON -DSTEP4_1   ;DEFLEXIBLE tells grompp to incld flexible water instead of rigid water in your topology
+						; DPOSRES tells grompp to incl posre.itp into topology
+						;not sure what above means
+
+integrator              = md			;A leap-frog algorithmleap-frog integrator for integrating Newton's equations of motion.
+dt                      = 0.001			;time step for integration (only makes sense for integrators md, sd and bd) (ps)
+nsteps                  = 100
+nstlog                  = 1000
+nstxout                 = 1000			;number of steps that elapse between writing coordinates to output trajectory file, the last coordinates are always written
+nstvout                 = 1000			;number of steps that elapse between writing velocities to output trajectory, the last velocities are always written
+nstfout                 = 1000			;number of steps that elapse between writing forces to output trajectory
+nstcalcenergy           = 100			;number of steps that elapse between calculating the energies, 0 is never. This option is only relevant with dynamics. 
+						;With a twin-range cut-off setup nstcalcenergy should be equal to or a multiple of nstlist. This option affects the performance in parallel simulations,
+						;because calculating energies requires global communication between all processes which can become a bottleneck at high parallelization. 
+nstenergy               = 1000			;number of steps that else between writing energies to energy file, the last energies are always written, should be a multiple of nstcalcenergy.
+;
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.2
+coulombtype             = pme
+rcoulomb                = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+;
+tcoupl                  = Nose-Hoover
+tc_grps                 = system 	;two coupling groups PROTEIN NON-PROTEIN	
+tau_t                   = 1.0   
+ref_t                   = 300   
+;
+constraints             = h-bonds
+constraint_algorithm    = LINCS
+;
+nstcomm                 = 100			;requency for center of mass motion removal
+comm_mode               = linear
+;comm_grps               = non-Water System		;group(s) for center of mass motion removal, default is the whole system
+;
+gen-vel                 = yes
+gen-temp                = 300
+gen-seed                = -1
+;
+refcoord_scaling        = com
