@@ -8732,7 +8732,7 @@
          H1    HCA1   0.090   2
          O1   OC311  -0.650   3
         HO1    HCP1   0.420   4
-         C5  CC3163   0.110   5
+         C5  CC3163   0.430   5 ! was 0.110
          H5    HCA1   0.090   6
          O5  OC3C61  -0.400   7
          C2  CC3161   0.140   8
@@ -8747,8 +8747,8 @@
          H4    HCA1   0.090  17
          O4   OC301  -0.360  18
          C6   CC2O2   0.520  19
-        O61   OC2D2  -0.568  20  ; -> stays OC2D2 ; but charge goes from -0.760 to -0.568
-        O62   OC2D2  -0.630  21  ; -> OC311 ; also, -0.760 -> -0.630 ; NOPE - stays OC2D2
+        O61   OC2D2  -0.630  20  ; -> stays OC2D2 ; but charge goes from -0.760 to -0.568
+        O62   OC2D2  -0.490  21  ; -> OC311 ; also, -0.760 -> -0.630 ; NOPE - stays OC2D2
          C7   CG331  -0.010  22
         H91    HGA3   0.090  23
         H92    HGA3   0.090  24
@@ -8787,7 +8787,7 @@
  [ atoms ]
         C1   CC3162    0.290   1
         H1     HCA1    0.090   2
-        C5   CC3163    0.110   3
+        C5   CC3163    0.450   3 ! was 0.110 - tailored to round off. not equivalent to anthing in a ring. closer to the original value
         H5     HCA1    0.090   4
         O5   OC3C61   -0.400   5
         C2   CC3161    0.140   6
@@ -8798,16 +8798,16 @@
         H3     HCA1    0.090  11
         O3    OC311   -0.650  12
        HO3     HCP1    0.420  13
-        C4   CC3161    0.140  14
+        C4   CC3161    0.090  14 ! was 0.140 - do not change - glycosydic linc
         H4     HCA1    0.090  15
-        O4    OC301   -0.650  16
-        C6    CC2O2    0.520  18
-       O61    OC2D2   -0.568  19
-       O62    OC2D2   -0.630  20
-        C7   CG331    -0.010  21
-       H91    HGA3     0.090  22
-       H92    HGA3     0.090  23
-       H93    HGA3     0.090  24
+        O4    OC301   -0.360  16 ! was -0.650 - do not change - glycosydic linc
+        C6    CC2O2    0.520  17 ! inner - buffer if needed HERE
+       O61    OC2D2   -0.630  18 ! was -0.568
+       O62    OC2D2   -0.490  19 ! was -0.630 | from RESI MEBZ in stream/na/toppar_all36_na_rna_modified.str
+        C7   CG331    -0.010  20
+       H91    HGA3     0.090  21
+       H92    HGA3     0.090  22
+       H93    HGA3     0.090  23
  
 
 
@@ -8844,7 +8844,7 @@
  [ atoms ]
         C1   CC3162    0.290   1
         H1     HCA1    0.090   2
-        C5   CC3163    0.110   3
+        C5   CC3163    0.470   3 !
         H5     HCA1    0.090   4
         O5   OC3C61   -0.400   5
         C2   CC3161    0.140   6
@@ -8860,8 +8860,8 @@
         O4    OC311   -0.650  16
        HO4     HCP1    0.420  17
         C6    CC2O2    0.520  18
-       O61    OC2D2   -0.568  19
-       O62    OC2D2   -0.630  20
+       O61    OC2D2   -0.630  19
+       O62    OC2D2   -0.490  20
         C7    CG331   -0.010  21
        H91     HGA3    0.090  22
        H92     HGA3    0.090  23

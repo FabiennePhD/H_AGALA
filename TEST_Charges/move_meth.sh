@@ -2,8 +2,8 @@
 CM_pos=($(awk '/CM/{print NR}' plus.pdb)) #line numbers the methyl carbon is on
 #echo "this is CM ${CM_pos[@]}"
 echo "don't forget to set x and CL"
-x=(1 2 3) # Residues which are methylated - needs to correspond to selective_HO5.sh						
-CL=3	# total number of residues
+x=(8 9) # Residues which are methylated - needs to correspond to selective_HO5.sh						
+CL=9	# total number of residues
 
 for ((i=0; i<${#x[@]}; i++)); do
 
