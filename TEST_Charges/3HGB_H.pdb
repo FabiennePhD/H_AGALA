@@ -66,18 +66,23 @@ ATOM     63  HO5 AGAT   4      15.228  -4.596  14.761  1.00  0.00           H
 CONECT    1    2                                                      
 CONECT    2    1    3                                                 
 CONECT    3    2    4    5   20                                       
+CONECT    3                                                           
 CONECT    4    3                                                      
 CONECT    5    3    6    7    9                                       
+CONECT    5                                                           
 CONECT    6    5                                                      
 CONECT    7    5    8                                                 
 CONECT    8    7                                                      
 CONECT    9    5   10   11   13                                       
+CONECT    9                                                           
 CONECT   10    9                                                      
 CONECT   11    9   12                                                 
 CONECT   12   11                                                      
 CONECT   13    9   14   15   21                                       
+CONECT   13                                                           
 CONECT   14   13                                                      
 CONECT   15   13   16   17   20                                       
+CONECT   15                                                           
 CONECT   16   15                                                      
 CONECT   17   15   18   19                                            
 CONECT   18   17                                                      
@@ -85,18 +90,23 @@ CONECT   19   17   61
 CONECT   20    3   15                                                 
 CONECT   21   13   22                                                 
 CONECT   22   21   23   24   39                                       
+CONECT   22                                                           
 CONECT   23   22                                                      
 CONECT   24   22   25   26   28                                       
+CONECT   24                                                           
 CONECT   25   24                                                      
 CONECT   26   24   27                                                 
 CONECT   27   26                                                      
 CONECT   28   24   29   30   32                                       
+CONECT   28                                                           
 CONECT   29   28                                                      
 CONECT   30   28   31                                                 
 CONECT   31   30                                                      
 CONECT   32   28   33   34   40                                       
+CONECT   32                                                           
 CONECT   33   32                                                      
 CONECT   34   32   35   36   39                                       
+CONECT   34                                                           
 CONECT   35   34                                                      
 CONECT   36   34   37   38                                            
 CONECT   37   36                                                      
@@ -104,14 +114,19 @@ CONECT   38   36   62
 CONECT   39   22   34                                                 
 CONECT   40   32   41                                                 
 CONECT   41   40   42   43   54                                       
+CONECT   41                                                           
 CONECT   42   41                                                      
 CONECT   43   41   44   45   59                                       
+CONECT   43                                                           
 CONECT   44   43                                                      
 CONECT   45   43   46   47   57                                       
+CONECT   45                                                           
 CONECT   46   45                                                      
 CONECT   47   45   48   49   55                                       
+CONECT   47                                                           
 CONECT   48   47                                                      
 CONECT   49   47   50   51   54                                       
+CONECT   49                                                           
 CONECT   50   49                                                      
 CONECT   51   49   52   53                                            
 CONECT   52   51                                                      

@@ -4,7 +4,7 @@
 #from here -> either glinks.sh to get topology which includes glycosidic links-be sure to 'unremove topol.top see last line
 #      or  -> selective.sh ->glinks.sh to selectively deprotonate HGB
 
-export cl=3                      #chain length ; number of agal sugar units in chain
+export cl=9                      #chain length ; number of agal sugar units in chain
 let "mr =24 +19 * (cl-2)"          # mr; the last line which corresponds to AGAM residue, the AGAM lines start at 24 and increment as 1 resdiue =19 lines
 export MR=$mr
 let "lr =$MR +19"                  #lr; the last line which corresponds to AGAT residue

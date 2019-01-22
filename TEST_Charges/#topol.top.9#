@@ -2,7 +2,7 @@
 ;	File 'topol.top' was generated
 ;	By user: mssnkt (14191)
 ;	On host: llcapo.csc.warwick.ac.uk
-;	At date: Tue Jan 22 13:53:02 2019
+;	At date: Tue Jan 22 13:51:45 2019
 
 ;
 ;	This is a standalone topology file
@@ -210,14 +210,14 @@ Other               3
    173       HCA1      9   AGHT     H3    173       0.09      1.008   ; qtot 0.18
    174      OC311      9   AGHT     O3    174      -0.65    15.9994   ; qtot -0.47
    175       HCP1      9   AGHT    HO3    175       0.42      1.008   ; qtot -0.05
-   176     CC3161      9   AGHT     C4    176       0.18     12.011   ; qtot 0.13
-   177       HCA1      9   AGHT     H4    177       0.09      1.008   ; qtot 0.22
-   178      OC311      9   AGHT     O4    178      -0.65    15.9994   ; qtot -0.43
-   179       HCP1      9   AGHT    HO4    179       0.42      1.008   ; qtot -0.01
-   180      CC2O2      9   AGHT     C6    180       0.75     12.011   ; qtot 0.74
-   181      OC2D2      9   AGHT    O61    181      -0.55    15.9994   ; qtot 0.19
-   182      OC2D2      9   AGHT    O62    182      -0.61    15.9994   ; qtot -0.42
-   183       HCP1      9   AGHT    HO5    183       0.42      1.008   ; qtot 0
+   176     CC3161      9   AGHT     C4    176        0.2     12.011   ; qtot 0.15
+   177       HCA1      9   AGHT     H4    177       0.09      1.008   ; qtot 0.24
+   178      OC311      9   AGHT     O4    178      -0.65    15.9994   ; qtot -0.41
+   179       HCP1      9   AGHT    HO4    179       0.42      1.008   ; qtot 0.01
+   180      CC2O2      9   AGHT     C6    180       0.75     12.011   ; qtot 0.76
+   181      OC2D2      9   AGHT    O61    181      -0.55    15.9994   ; qtot 0.21
+   182      OC2D2      9   AGHT    O62    182      -0.61    15.9994   ; qtot -0.4
+   183       HCP1      9   AGHT    HO5    183       0.42      1.008   ; qtot 0.02
 
 [ bonds ]
 ;  ai    aj funct            c0            c1            c2            c3

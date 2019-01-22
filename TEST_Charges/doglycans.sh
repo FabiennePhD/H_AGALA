@@ -1,10 +1,11 @@
 #!/bin/bash
 source activate doglycans
-cl=3 # chain length
+cl=9 # chain length
 let clm=$cl-1
 
 
-dg_path="/home/chem/mstscj/DOGLYCANS/doglycans"
+#dg_path="/home/chem/mstscj/DOGLYCANS/doglycans"
+dg_path="/home/chem/mssnkt/CODES/DO_GLYCANS/biophys-uh-doglycans-0f1a8c993a91"
 
 s_file="seqfile.seq"
 

@@ -2,7 +2,7 @@
 ;	File 'topol.top' was generated
 ;	By user: mssnkt (14191)
 ;	On host: llcapo.csc.warwick.ac.uk
-;	At date: Tue Jan 22 13:53:02 2019
+;	At date: Tue Jan 22 13:44:39 2019
 
 ;
 ;	This is a standalone topology file
@@ -49,7 +49,7 @@ Other               3
     20      OC2D2      1   AGHI    O61     20      -0.55    15.9994   ; qtot -0.01
     21      OC2D2      1   AGHI    O62     21      -0.61    15.9994   ; qtot -0.62
     22       HCP1      1   AGHI    HO5     22       0.42      1.008   ; qtot -0.2
-; residue   2 AGHM rtp AGHM q  0.0
+; residue   2 AGHM rtp AGHM q -0.0
     23     CC3162      2   AGHM     C1     23       0.29     12.011   ; qtot 0.09
     24       HCA1      2   AGHM     H1     24       0.09      1.008   ; qtot 0.18
     25     CC3163      2   AGHM     C5     25       0.08     12.011   ; qtot 0.26
@@ -63,161 +63,161 @@ Other               3
     33       HCA1      2   AGHM     H3     33       0.09      1.008   ; qtot 0.18
     34      OC311      2   AGHM     O3     34      -0.65    15.9994   ; qtot -0.47
     35       HCP1      2   AGHM    HO3     35       0.42      1.008   ; qtot -0.05
-    36     CC3161      2   AGHM     C4     36       0.11     12.011   ; qtot 0.06
-    37       HCA1      2   AGHM     H4     37       0.09      1.008   ; qtot 0.15
-    38      OC301      2   AGHM     O4     38      -0.36    15.9994   ; qtot -0.21
-    39      CC2O2      2   AGHM     C6     39       0.75     12.011   ; qtot 0.54
-    40      OC2D2      2   AGHM    O61     40      -0.55    15.9994   ; qtot -0.01
-    41      OC2D2      2   AGHM    O62     41      -0.61    15.9994   ; qtot -0.62
-    42       HCP1      2   AGHM    HO5     42       0.42      1.008   ; qtot -0.2
-; residue   3 AGHM rtp AGHM q  0.0
-    43     CC3162      3   AGHM     C1     43       0.29     12.011   ; qtot 0.09
-    44       HCA1      3   AGHM     H1     44       0.09      1.008   ; qtot 0.18
-    45     CC3163      3   AGHM     C5     45       0.08     12.011   ; qtot 0.26
-    46       HCA1      3   AGHM     H5     46       0.09      1.008   ; qtot 0.35
-    47     OC3C61      3   AGHM     O5     47       -0.4    15.9994   ; qtot -0.05
-    48     CC3161      3   AGHM     C2     48       0.14     12.011   ; qtot 0.09
-    49       HCA1      3   AGHM     H2     49       0.09      1.008   ; qtot 0.18
-    50      OC311      3   AGHM     O2     50      -0.65    15.9994   ; qtot -0.47
-    51       HCP1      3   AGHM    HO2     51       0.42      1.008   ; qtot -0.05
-    52     CC3161      3   AGHM     C3     52       0.14     12.011   ; qtot 0.09
-    53       HCA1      3   AGHM     H3     53       0.09      1.008   ; qtot 0.18
-    54      OC311      3   AGHM     O3     54      -0.65    15.9994   ; qtot -0.47
-    55       HCP1      3   AGHM    HO3     55       0.42      1.008   ; qtot -0.05
-    56     CC3161      3   AGHM     C4     56       0.11     12.011   ; qtot 0.06
-    57       HCA1      3   AGHM     H4     57       0.09      1.008   ; qtot 0.15
-    58      OC301      3   AGHM     O4     58      -0.36    15.9994   ; qtot -0.21
-    59      CC2O2      3   AGHM     C6     59       0.75     12.011   ; qtot 0.54
-    60      OC2D2      3   AGHM    O61     60      -0.55    15.9994   ; qtot -0.01
-    61      OC2D2      3   AGHM    O62     61      -0.61    15.9994   ; qtot -0.62
-    62       HCP1      3   AGHM    HO5     62       0.42      1.008   ; qtot -0.2
-; residue   4 AGHM rtp AGHM q  0.0
-    63     CC3162      4   AGHM     C1     63       0.29     12.011   ; qtot 0.09
-    64       HCA1      4   AGHM     H1     64       0.09      1.008   ; qtot 0.18
-    65     CC3163      4   AGHM     C5     65       0.08     12.011   ; qtot 0.26
-    66       HCA1      4   AGHM     H5     66       0.09      1.008   ; qtot 0.35
-    67     OC3C61      4   AGHM     O5     67       -0.4    15.9994   ; qtot -0.05
-    68     CC3161      4   AGHM     C2     68       0.14     12.011   ; qtot 0.09
-    69       HCA1      4   AGHM     H2     69       0.09      1.008   ; qtot 0.18
-    70      OC311      4   AGHM     O2     70      -0.65    15.9994   ; qtot -0.47
-    71       HCP1      4   AGHM    HO2     71       0.42      1.008   ; qtot -0.05
-    72     CC3161      4   AGHM     C3     72       0.14     12.011   ; qtot 0.09
-    73       HCA1      4   AGHM     H3     73       0.09      1.008   ; qtot 0.18
-    74      OC311      4   AGHM     O3     74      -0.65    15.9994   ; qtot -0.47
-    75       HCP1      4   AGHM    HO3     75       0.42      1.008   ; qtot -0.05
-    76     CC3161      4   AGHM     C4     76       0.11     12.011   ; qtot 0.06
-    77       HCA1      4   AGHM     H4     77       0.09      1.008   ; qtot 0.15
-    78      OC301      4   AGHM     O4     78      -0.36    15.9994   ; qtot -0.21
-    79      CC2O2      4   AGHM     C6     79       0.75     12.011   ; qtot 0.54
-    80      OC2D2      4   AGHM    O61     80      -0.55    15.9994   ; qtot -0.01
-    81      OC2D2      4   AGHM    O62     81      -0.61    15.9994   ; qtot -0.62
-    82       HCP1      4   AGHM    HO5     82       0.42      1.008   ; qtot -0.2
-; residue   5 AGHM rtp AGHM q  0.0
-    83     CC3162      5   AGHM     C1     83       0.29     12.011   ; qtot 0.09
-    84       HCA1      5   AGHM     H1     84       0.09      1.008   ; qtot 0.18
-    85     CC3163      5   AGHM     C5     85       0.08     12.011   ; qtot 0.26
-    86       HCA1      5   AGHM     H5     86       0.09      1.008   ; qtot 0.35
-    87     OC3C61      5   AGHM     O5     87       -0.4    15.9994   ; qtot -0.05
-    88     CC3161      5   AGHM     C2     88       0.14     12.011   ; qtot 0.09
-    89       HCA1      5   AGHM     H2     89       0.09      1.008   ; qtot 0.18
-    90      OC311      5   AGHM     O2     90      -0.65    15.9994   ; qtot -0.47
-    91       HCP1      5   AGHM    HO2     91       0.42      1.008   ; qtot -0.05
-    92     CC3161      5   AGHM     C3     92       0.14     12.011   ; qtot 0.09
-    93       HCA1      5   AGHM     H3     93       0.09      1.008   ; qtot 0.18
-    94      OC311      5   AGHM     O3     94      -0.65    15.9994   ; qtot -0.47
-    95       HCP1      5   AGHM    HO3     95       0.42      1.008   ; qtot -0.05
-    96     CC3161      5   AGHM     C4     96       0.11     12.011   ; qtot 0.06
-    97       HCA1      5   AGHM     H4     97       0.09      1.008   ; qtot 0.15
-    98      OC301      5   AGHM     O4     98      -0.36    15.9994   ; qtot -0.21
-    99      CC2O2      5   AGHM     C6     99       0.75     12.011   ; qtot 0.54
-   100      OC2D2      5   AGHM    O61    100      -0.55    15.9994   ; qtot -0.01
-   101      OC2D2      5   AGHM    O62    101      -0.61    15.9994   ; qtot -0.62
-   102       HCP1      5   AGHM    HO5    102       0.42      1.008   ; qtot -0.2
-; residue   6 AGHM rtp AGHM q  0.0
-   103     CC3162      6   AGHM     C1    103       0.29     12.011   ; qtot 0.09
-   104       HCA1      6   AGHM     H1    104       0.09      1.008   ; qtot 0.18
-   105     CC3163      6   AGHM     C5    105       0.08     12.011   ; qtot 0.26
-   106       HCA1      6   AGHM     H5    106       0.09      1.008   ; qtot 0.35
-   107     OC3C61      6   AGHM     O5    107       -0.4    15.9994   ; qtot -0.05
-   108     CC3161      6   AGHM     C2    108       0.14     12.011   ; qtot 0.09
-   109       HCA1      6   AGHM     H2    109       0.09      1.008   ; qtot 0.18
-   110      OC311      6   AGHM     O2    110      -0.65    15.9994   ; qtot -0.47
-   111       HCP1      6   AGHM    HO2    111       0.42      1.008   ; qtot -0.05
-   112     CC3161      6   AGHM     C3    112       0.14     12.011   ; qtot 0.09
-   113       HCA1      6   AGHM     H3    113       0.09      1.008   ; qtot 0.18
-   114      OC311      6   AGHM     O3    114      -0.65    15.9994   ; qtot -0.47
-   115       HCP1      6   AGHM    HO3    115       0.42      1.008   ; qtot -0.05
-   116     CC3161      6   AGHM     C4    116       0.11     12.011   ; qtot 0.06
-   117       HCA1      6   AGHM     H4    117       0.09      1.008   ; qtot 0.15
-   118      OC301      6   AGHM     O4    118      -0.36    15.9994   ; qtot -0.21
-   119      CC2O2      6   AGHM     C6    119       0.75     12.011   ; qtot 0.54
-   120      OC2D2      6   AGHM    O61    120      -0.55    15.9994   ; qtot -0.01
-   121      OC2D2      6   AGHM    O62    121      -0.61    15.9994   ; qtot -0.62
-   122       HCP1      6   AGHM    HO5    122       0.42      1.008   ; qtot -0.2
-; residue   7 AGHM rtp AGHM q  0.0
-   123     CC3162      7   AGHM     C1    123       0.29     12.011   ; qtot 0.09
-   124       HCA1      7   AGHM     H1    124       0.09      1.008   ; qtot 0.18
-   125     CC3163      7   AGHM     C5    125       0.08     12.011   ; qtot 0.26
-   126       HCA1      7   AGHM     H5    126       0.09      1.008   ; qtot 0.35
-   127     OC3C61      7   AGHM     O5    127       -0.4    15.9994   ; qtot -0.05
-   128     CC3161      7   AGHM     C2    128       0.14     12.011   ; qtot 0.09
-   129       HCA1      7   AGHM     H2    129       0.09      1.008   ; qtot 0.18
-   130      OC311      7   AGHM     O2    130      -0.65    15.9994   ; qtot -0.47
-   131       HCP1      7   AGHM    HO2    131       0.42      1.008   ; qtot -0.05
-   132     CC3161      7   AGHM     C3    132       0.14     12.011   ; qtot 0.09
-   133       HCA1      7   AGHM     H3    133       0.09      1.008   ; qtot 0.18
-   134      OC311      7   AGHM     O3    134      -0.65    15.9994   ; qtot -0.47
-   135       HCP1      7   AGHM    HO3    135       0.42      1.008   ; qtot -0.05
-   136     CC3161      7   AGHM     C4    136       0.11     12.011   ; qtot 0.06
-   137       HCA1      7   AGHM     H4    137       0.09      1.008   ; qtot 0.15
-   138      OC301      7   AGHM     O4    138      -0.36    15.9994   ; qtot -0.21
-   139      CC2O2      7   AGHM     C6    139       0.75     12.011   ; qtot 0.54
-   140      OC2D2      7   AGHM    O61    140      -0.55    15.9994   ; qtot -0.01
-   141      OC2D2      7   AGHM    O62    141      -0.61    15.9994   ; qtot -0.62
-   142       HCP1      7   AGHM    HO5    142       0.42      1.008   ; qtot -0.2
-; residue   8 AGHM rtp AGHM q  0.0
-   143     CC3162      8   AGHM     C1    143       0.29     12.011   ; qtot 0.09
-   144       HCA1      8   AGHM     H1    144       0.09      1.008   ; qtot 0.18
-   145     CC3163      8   AGHM     C5    145       0.08     12.011   ; qtot 0.26
-   146       HCA1      8   AGHM     H5    146       0.09      1.008   ; qtot 0.35
-   147     OC3C61      8   AGHM     O5    147       -0.4    15.9994   ; qtot -0.05
-   148     CC3161      8   AGHM     C2    148       0.14     12.011   ; qtot 0.09
-   149       HCA1      8   AGHM     H2    149       0.09      1.008   ; qtot 0.18
-   150      OC311      8   AGHM     O2    150      -0.65    15.9994   ; qtot -0.47
-   151       HCP1      8   AGHM    HO2    151       0.42      1.008   ; qtot -0.05
-   152     CC3161      8   AGHM     C3    152       0.14     12.011   ; qtot 0.09
-   153       HCA1      8   AGHM     H3    153       0.09      1.008   ; qtot 0.18
-   154      OC311      8   AGHM     O3    154      -0.65    15.9994   ; qtot -0.47
-   155       HCP1      8   AGHM    HO3    155       0.42      1.008   ; qtot -0.05
-   156     CC3161      8   AGHM     C4    156       0.11     12.011   ; qtot 0.06
-   157       HCA1      8   AGHM     H4    157       0.09      1.008   ; qtot 0.15
-   158      OC301      8   AGHM     O4    158      -0.36    15.9994   ; qtot -0.21
-   159      CC2O2      8   AGHM     C6    159       0.75     12.011   ; qtot 0.54
-   160      OC2D2      8   AGHM    O61    160      -0.55    15.9994   ; qtot -0.01
-   161      OC2D2      8   AGHM    O62    161      -0.61    15.9994   ; qtot -0.62
-   162       HCP1      8   AGHM    HO5    162       0.42      1.008   ; qtot -0.2
+    36     CC3161      2   AGHM     C4     36       0.09     12.011   ; qtot 0.04
+    37       HCA1      2   AGHM     H4     37       0.09      1.008   ; qtot 0.13
+    38      OC301      2   AGHM     O4     38      -0.36    15.9994   ; qtot -0.23
+    39      CC2O2      2   AGHM     C6     39       0.75     12.011   ; qtot 0.52
+    40      OC2D2      2   AGHM    O61     40      -0.55    15.9994   ; qtot -0.03
+    41      OC2D2      2   AGHM    O62     41      -0.61    15.9994   ; qtot -0.64
+    42       HCP1      2   AGHM    HO5     42       0.42      1.008   ; qtot -0.22
+; residue   3 AGHM rtp AGHM q -0.0
+    43     CC3162      3   AGHM     C1     43       0.29     12.011   ; qtot 0.07
+    44       HCA1      3   AGHM     H1     44       0.09      1.008   ; qtot 0.16
+    45     CC3163      3   AGHM     C5     45       0.08     12.011   ; qtot 0.24
+    46       HCA1      3   AGHM     H5     46       0.09      1.008   ; qtot 0.33
+    47     OC3C61      3   AGHM     O5     47       -0.4    15.9994   ; qtot -0.07
+    48     CC3161      3   AGHM     C2     48       0.14     12.011   ; qtot 0.07
+    49       HCA1      3   AGHM     H2     49       0.09      1.008   ; qtot 0.16
+    50      OC311      3   AGHM     O2     50      -0.65    15.9994   ; qtot -0.49
+    51       HCP1      3   AGHM    HO2     51       0.42      1.008   ; qtot -0.07
+    52     CC3161      3   AGHM     C3     52       0.14     12.011   ; qtot 0.07
+    53       HCA1      3   AGHM     H3     53       0.09      1.008   ; qtot 0.16
+    54      OC311      3   AGHM     O3     54      -0.65    15.9994   ; qtot -0.49
+    55       HCP1      3   AGHM    HO3     55       0.42      1.008   ; qtot -0.07
+    56     CC3161      3   AGHM     C4     56       0.09     12.011   ; qtot 0.02
+    57       HCA1      3   AGHM     H4     57       0.09      1.008   ; qtot 0.11
+    58      OC301      3   AGHM     O4     58      -0.36    15.9994   ; qtot -0.25
+    59      CC2O2      3   AGHM     C6     59       0.75     12.011   ; qtot 0.5
+    60      OC2D2      3   AGHM    O61     60      -0.55    15.9994   ; qtot -0.05
+    61      OC2D2      3   AGHM    O62     61      -0.61    15.9994   ; qtot -0.66
+    62       HCP1      3   AGHM    HO5     62       0.42      1.008   ; qtot -0.24
+; residue   4 AGHM rtp AGHM q -0.0
+    63     CC3162      4   AGHM     C1     63       0.29     12.011   ; qtot 0.05
+    64       HCA1      4   AGHM     H1     64       0.09      1.008   ; qtot 0.14
+    65     CC3163      4   AGHM     C5     65       0.08     12.011   ; qtot 0.22
+    66       HCA1      4   AGHM     H5     66       0.09      1.008   ; qtot 0.31
+    67     OC3C61      4   AGHM     O5     67       -0.4    15.9994   ; qtot -0.09
+    68     CC3161      4   AGHM     C2     68       0.14     12.011   ; qtot 0.05
+    69       HCA1      4   AGHM     H2     69       0.09      1.008   ; qtot 0.14
+    70      OC311      4   AGHM     O2     70      -0.65    15.9994   ; qtot -0.51
+    71       HCP1      4   AGHM    HO2     71       0.42      1.008   ; qtot -0.09
+    72     CC3161      4   AGHM     C3     72       0.14     12.011   ; qtot 0.05
+    73       HCA1      4   AGHM     H3     73       0.09      1.008   ; qtot 0.14
+    74      OC311      4   AGHM     O3     74      -0.65    15.9994   ; qtot -0.51
+    75       HCP1      4   AGHM    HO3     75       0.42      1.008   ; qtot -0.09
+    76     CC3161      4   AGHM     C4     76       0.09     12.011   ; qtot 0
+    77       HCA1      4   AGHM     H4     77       0.09      1.008   ; qtot 0.09
+    78      OC301      4   AGHM     O4     78      -0.36    15.9994   ; qtot -0.27
+    79      CC2O2      4   AGHM     C6     79       0.75     12.011   ; qtot 0.48
+    80      OC2D2      4   AGHM    O61     80      -0.55    15.9994   ; qtot -0.07
+    81      OC2D2      4   AGHM    O62     81      -0.61    15.9994   ; qtot -0.68
+    82       HCP1      4   AGHM    HO5     82       0.42      1.008   ; qtot -0.26
+; residue   5 AGHM rtp AGHM q -0.0
+    83     CC3162      5   AGHM     C1     83       0.29     12.011   ; qtot 0.03
+    84       HCA1      5   AGHM     H1     84       0.09      1.008   ; qtot 0.12
+    85     CC3163      5   AGHM     C5     85       0.08     12.011   ; qtot 0.2
+    86       HCA1      5   AGHM     H5     86       0.09      1.008   ; qtot 0.29
+    87     OC3C61      5   AGHM     O5     87       -0.4    15.9994   ; qtot -0.11
+    88     CC3161      5   AGHM     C2     88       0.14     12.011   ; qtot 0.03
+    89       HCA1      5   AGHM     H2     89       0.09      1.008   ; qtot 0.12
+    90      OC311      5   AGHM     O2     90      -0.65    15.9994   ; qtot -0.53
+    91       HCP1      5   AGHM    HO2     91       0.42      1.008   ; qtot -0.11
+    92     CC3161      5   AGHM     C3     92       0.14     12.011   ; qtot 0.03
+    93       HCA1      5   AGHM     H3     93       0.09      1.008   ; qtot 0.12
+    94      OC311      5   AGHM     O3     94      -0.65    15.9994   ; qtot -0.53
+    95       HCP1      5   AGHM    HO3     95       0.42      1.008   ; qtot -0.11
+    96     CC3161      5   AGHM     C4     96       0.09     12.011   ; qtot -0.02
+    97       HCA1      5   AGHM     H4     97       0.09      1.008   ; qtot 0.07
+    98      OC301      5   AGHM     O4     98      -0.36    15.9994   ; qtot -0.29
+    99      CC2O2      5   AGHM     C6     99       0.75     12.011   ; qtot 0.46
+   100      OC2D2      5   AGHM    O61    100      -0.55    15.9994   ; qtot -0.09
+   101      OC2D2      5   AGHM    O62    101      -0.61    15.9994   ; qtot -0.7
+   102       HCP1      5   AGHM    HO5    102       0.42      1.008   ; qtot -0.28
+; residue   6 AGHM rtp AGHM q -0.0
+   103     CC3162      6   AGHM     C1    103       0.29     12.011   ; qtot 0.01
+   104       HCA1      6   AGHM     H1    104       0.09      1.008   ; qtot 0.1
+   105     CC3163      6   AGHM     C5    105       0.08     12.011   ; qtot 0.18
+   106       HCA1      6   AGHM     H5    106       0.09      1.008   ; qtot 0.27
+   107     OC3C61      6   AGHM     O5    107       -0.4    15.9994   ; qtot -0.13
+   108     CC3161      6   AGHM     C2    108       0.14     12.011   ; qtot 0.01
+   109       HCA1      6   AGHM     H2    109       0.09      1.008   ; qtot 0.1
+   110      OC311      6   AGHM     O2    110      -0.65    15.9994   ; qtot -0.55
+   111       HCP1      6   AGHM    HO2    111       0.42      1.008   ; qtot -0.13
+   112     CC3161      6   AGHM     C3    112       0.14     12.011   ; qtot 0.01
+   113       HCA1      6   AGHM     H3    113       0.09      1.008   ; qtot 0.1
+   114      OC311      6   AGHM     O3    114      -0.65    15.9994   ; qtot -0.55
+   115       HCP1      6   AGHM    HO3    115       0.42      1.008   ; qtot -0.13
+   116     CC3161      6   AGHM     C4    116       0.09     12.011   ; qtot -0.04
+   117       HCA1      6   AGHM     H4    117       0.09      1.008   ; qtot 0.05
+   118      OC301      6   AGHM     O4    118      -0.36    15.9994   ; qtot -0.31
+   119      CC2O2      6   AGHM     C6    119       0.75     12.011   ; qtot 0.44
+   120      OC2D2      6   AGHM    O61    120      -0.55    15.9994   ; qtot -0.11
+   121      OC2D2      6   AGHM    O62    121      -0.61    15.9994   ; qtot -0.72
+   122       HCP1      6   AGHM    HO5    122       0.42      1.008   ; qtot -0.3
+; residue   7 AGHM rtp AGHM q -0.0
+   123     CC3162      7   AGHM     C1    123       0.29     12.011   ; qtot -0.01
+   124       HCA1      7   AGHM     H1    124       0.09      1.008   ; qtot 0.08
+   125     CC3163      7   AGHM     C5    125       0.08     12.011   ; qtot 0.16
+   126       HCA1      7   AGHM     H5    126       0.09      1.008   ; qtot 0.25
+   127     OC3C61      7   AGHM     O5    127       -0.4    15.9994   ; qtot -0.15
+   128     CC3161      7   AGHM     C2    128       0.14     12.011   ; qtot -0.01
+   129       HCA1      7   AGHM     H2    129       0.09      1.008   ; qtot 0.08
+   130      OC311      7   AGHM     O2    130      -0.65    15.9994   ; qtot -0.57
+   131       HCP1      7   AGHM    HO2    131       0.42      1.008   ; qtot -0.15
+   132     CC3161      7   AGHM     C3    132       0.14     12.011   ; qtot -0.01
+   133       HCA1      7   AGHM     H3    133       0.09      1.008   ; qtot 0.08
+   134      OC311      7   AGHM     O3    134      -0.65    15.9994   ; qtot -0.57
+   135       HCP1      7   AGHM    HO3    135       0.42      1.008   ; qtot -0.15
+   136     CC3161      7   AGHM     C4    136       0.09     12.011   ; qtot -0.06
+   137       HCA1      7   AGHM     H4    137       0.09      1.008   ; qtot 0.03
+   138      OC301      7   AGHM     O4    138      -0.36    15.9994   ; qtot -0.33
+   139      CC2O2      7   AGHM     C6    139       0.75     12.011   ; qtot 0.42
+   140      OC2D2      7   AGHM    O61    140      -0.55    15.9994   ; qtot -0.13
+   141      OC2D2      7   AGHM    O62    141      -0.61    15.9994   ; qtot -0.74
+   142       HCP1      7   AGHM    HO5    142       0.42      1.008   ; qtot -0.32
+; residue   8 AGHM rtp AGHM q -0.0
+   143     CC3162      8   AGHM     C1    143       0.29     12.011   ; qtot -0.03
+   144       HCA1      8   AGHM     H1    144       0.09      1.008   ; qtot 0.06
+   145     CC3163      8   AGHM     C5    145       0.08     12.011   ; qtot 0.14
+   146       HCA1      8   AGHM     H5    146       0.09      1.008   ; qtot 0.23
+   147     OC3C61      8   AGHM     O5    147       -0.4    15.9994   ; qtot -0.17
+   148     CC3161      8   AGHM     C2    148       0.14     12.011   ; qtot -0.03
+   149       HCA1      8   AGHM     H2    149       0.09      1.008   ; qtot 0.06
+   150      OC311      8   AGHM     O2    150      -0.65    15.9994   ; qtot -0.59
+   151       HCP1      8   AGHM    HO2    151       0.42      1.008   ; qtot -0.17
+   152     CC3161      8   AGHM     C3    152       0.14     12.011   ; qtot -0.03
+   153       HCA1      8   AGHM     H3    153       0.09      1.008   ; qtot 0.06
+   154      OC311      8   AGHM     O3    154      -0.65    15.9994   ; qtot -0.59
+   155       HCP1      8   AGHM    HO3    155       0.42      1.008   ; qtot -0.17
+   156     CC3161      8   AGHM     C4    156       0.09     12.011   ; qtot -0.08
+   157       HCA1      8   AGHM     H4    157       0.09      1.008   ; qtot 0.01
+   158      OC301      8   AGHM     O4    158      -0.36    15.9994   ; qtot -0.35
+   159      CC2O2      8   AGHM     C6    159       0.75     12.011   ; qtot 0.4
+   160      OC2D2      8   AGHM    O61    160      -0.55    15.9994   ; qtot -0.15
+   161      OC2D2      8   AGHM    O62    161      -0.61    15.9994   ; qtot -0.76
+   162       HCP1      8   AGHM    HO5    162       0.42      1.008   ; qtot -0.34
 ; residue   9 AGHT rtp AGHT q +0.2
-   163     CC3162      9   AGHT     C1    163       0.29     12.011   ; qtot 0.09
-   164       HCA1      9   AGHT     H1    164       0.09      1.008   ; qtot 0.18
-   165     CC3163      9   AGHT     C5    165       0.08     12.011   ; qtot 0.26
-   166       HCA1      9   AGHT     H5    166       0.09      1.008   ; qtot 0.35
-   167     OC3C61      9   AGHT     O5    167       -0.4    15.9994   ; qtot -0.05
-   168     CC3161      9   AGHT     C2    168       0.14     12.011   ; qtot 0.09
-   169       HCA1      9   AGHT     H2    169       0.09      1.008   ; qtot 0.18
-   170      OC311      9   AGHT     O2    170      -0.65    15.9994   ; qtot -0.47
-   171       HCP1      9   AGHT    HO2    171       0.42      1.008   ; qtot -0.05
-   172     CC3161      9   AGHT     C3    172       0.14     12.011   ; qtot 0.09
-   173       HCA1      9   AGHT     H3    173       0.09      1.008   ; qtot 0.18
-   174      OC311      9   AGHT     O3    174      -0.65    15.9994   ; qtot -0.47
-   175       HCP1      9   AGHT    HO3    175       0.42      1.008   ; qtot -0.05
-   176     CC3161      9   AGHT     C4    176       0.18     12.011   ; qtot 0.13
-   177       HCA1      9   AGHT     H4    177       0.09      1.008   ; qtot 0.22
-   178      OC311      9   AGHT     O4    178      -0.65    15.9994   ; qtot -0.43
-   179       HCP1      9   AGHT    HO4    179       0.42      1.008   ; qtot -0.01
-   180      CC2O2      9   AGHT     C6    180       0.75     12.011   ; qtot 0.74
-   181      OC2D2      9   AGHT    O61    181      -0.55    15.9994   ; qtot 0.19
-   182      OC2D2      9   AGHT    O62    182      -0.61    15.9994   ; qtot -0.42
-   183       HCP1      9   AGHT    HO5    183       0.42      1.008   ; qtot 0
+   163     CC3162      9   AGHT     C1    163       0.29     12.011   ; qtot -0.05
+   164       HCA1      9   AGHT     H1    164       0.09      1.008   ; qtot 0.04
+   165     CC3163      9   AGHT     C5    165       0.08     12.011   ; qtot 0.12
+   166       HCA1      9   AGHT     H5    166       0.09      1.008   ; qtot 0.21
+   167     OC3C61      9   AGHT     O5    167       -0.4    15.9994   ; qtot -0.19
+   168     CC3161      9   AGHT     C2    168       0.14     12.011   ; qtot -0.05
+   169       HCA1      9   AGHT     H2    169       0.09      1.008   ; qtot 0.04
+   170      OC311      9   AGHT     O2    170      -0.65    15.9994   ; qtot -0.61
+   171       HCP1      9   AGHT    HO2    171       0.42      1.008   ; qtot -0.19
+   172     CC3161      9   AGHT     C3    172       0.14     12.011   ; qtot -0.05
+   173       HCA1      9   AGHT     H3    173       0.09      1.008   ; qtot 0.04
+   174      OC311      9   AGHT     O3    174      -0.65    15.9994   ; qtot -0.61
+   175       HCP1      9   AGHT    HO3    175       0.42      1.008   ; qtot -0.19
+   176     CC3161      9   AGHT     C4    176        0.2     12.011   ; qtot 0.01
+   177       HCA1      9   AGHT     H4    177       0.09      1.008   ; qtot 0.1
+   178      OC311      9   AGHT     O4    178      -0.65    15.9994   ; qtot -0.55
+   179       HCP1      9   AGHT    HO4    179       0.42      1.008   ; qtot -0.13
+   180      CC2O2      9   AGHT     C6    180       0.75     12.011   ; qtot 0.62
+   181      OC2D2      9   AGHT    O61    181      -0.55    15.9994   ; qtot 0.07
+   182      OC2D2      9   AGHT    O62    182      -0.61    15.9994   ; qtot -0.54
+   183       HCP1      9   AGHT    HO5    183       0.42      1.008   ; qtot -0.12
 
 [ bonds ]
 ;  ai    aj funct            c0            c1            c2            c3
