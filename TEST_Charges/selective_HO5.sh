@@ -8,7 +8,7 @@ f_path="./"
 t_file="conf.pdb"
 
 
-atoms_to_remove=()  #**** residues from which HO5 is deleted
+atoms_to_remove=(1 2 3 4 5 6 7 8 9 )  #**** residues from which HO5 is deleted
 for ((j=0; j<${#atoms_to_remove[@]}; j++)); do
 	     delet[j]=$(awk '{if ($3=="HO5" && $5=='${atoms_to_remove[j]}') print NR}' conf.pdb)
 	     sed -i "${delet[j]}d" conf.pdb
