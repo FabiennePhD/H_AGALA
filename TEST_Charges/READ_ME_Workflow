@@ -1,0 +1,9 @@
+1. Set HGB chain length (CL) in seqfile.seq
+2. In doglycans.sh set CL based on step 1. Then bash doglycans.sh. Output are doglycan pdb files.
+3. In pd2gmx.sh set CL based on step 1. Then bash pdb2gmx.sh, choosing option 1 for FF (JUL 17). Output is conf.pdb
+4. In selective_HO5.sh under atoms_to_remove =() type in which residues need to have their hydrogen (HO5 in pdb) removed.
+Choose option 2 for FF (Nov2018) Output is conf.pdb and a topol.top.
+5.If you want to methylate a site, copy conf.pdb from step 4 to Methylate_pdb/ADD_Meth, then bash add_meth.sh. Make sure that the site you are
+methylating has no protons (HO5) attached. Basically, account for this in step 4. Output is plus.pdb, cp across to working directory (../../)
+6.In move_meth.sh set x=() which corresponds to the residues where a methyl group has been added, and set CL. Bash move_meth.sh.
+Choose option 2 for FF (Nov 2018). Output is conf1.pdb and a topology.
