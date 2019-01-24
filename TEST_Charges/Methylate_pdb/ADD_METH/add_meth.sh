@@ -139,7 +139,7 @@ if [[ $c -ne 0 ]]; then
    done
    
    # cleanup
-   rm -r -f log.log tmp_1.tcl vmd.log tmp.tcl merged.pdb test.pdb
+   rm -r -f log.log tmp_1.tcl vmd.log tmp.tcl merged.pdb test.pdb 
 
 else
    echo "We are not adding any CH3!"
@@ -218,7 +218,7 @@ for (( i=1; i<=$c; i++ )); do
 done
 
 # cleanup
-rm -r -f log.log tmp_1.tcl vmd.log tmp.tcl merged.pdb test.pdb
+rm -r -f log.log tmp_1.tcl vmd.log tmp.tcl merged.pdb test.pdb 
 
 # final result in plus.pdb
 

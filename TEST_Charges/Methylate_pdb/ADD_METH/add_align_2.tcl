@@ -61,8 +61,8 @@ set oh [ atomselect top "name O6X" ]
 $meth moveby [find_axis $ox $oh]
 
 # un-flag the X atoms... needed for more CH3 groups later on!
-$co set name "C5 "
-$ct set name "C6 "
+$co set name "C6 "
+$ct set name "C5 "
 $oh set name "O_NAME"
 set cx [ atomselect top "name CXX" ]
 set A CM
