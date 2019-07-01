@@ -1,0 +1,26 @@
+name: cgenff
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - blas=1.1=openblas
+  - certifi=2018.10.15=py27_1000
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libgfortran=3.0.0=1
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - ncurses=5.9=10
+  - networkx=1.8.1=py27_0
+  - numpy=1.15.4=py27_blas_openblashb06ca3d_0
+  - openblas=0.3.3=ha44fe06_1
+  - openssl=1.0.1k=1
+  - pip=18.1=py27_1000
+  - python=2.7.3=7
+  - readline=6.2=0
+  - setuptools=40.6.2=py27_0
+  - sqlite=3.19.3=1
+  - system=5.8=2
+  - tk=8.5.19=2
+  - wheel=0.32.3=py27_0
+  - zlib=1.2.11=h470a237_3
+prefix: /home/chem/mssnkt/anaconda3/envs/cgenff
+

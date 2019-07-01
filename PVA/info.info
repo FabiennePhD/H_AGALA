@@ -1,0 +1,26 @@
+# How to generate basically everything via MAESTRo -> CGENFF -> cgenff_charmm2gmx.py
+# NOTE: have a look at the penalties!
+
+# Get MAESTRO Schrodinger. Needs an academic account. Free version for academic use
+
+# Build the molecule of your choice
+- Build
+- Draw
+- Tick the "Minimize" box
+- Build (fun)
+- Export structures (.mol2)
+
+# CGenff (https://cgenff.paramchem.org/userAccount/userLogin.php)
+- Upload the .mol2 file
+- Copy/paste the .str file into <file>.str
+
+# Convert the .str file via cgenff_charmm2gmx.py into GROMACS-friendly .itp files
+# We need a CONDA environment (that's the easiest way...) to do that
+
+# Create a conda environment from file
+conda env create -f environment.yml
+source activate cgenff
+
+# change the RESI entry into the .str and feed that RESname to the python script
+python cgenff_charmm2gmx.py RESNAME <file>.mol2 <file>.str charmm36-jul2017.ff/
+
